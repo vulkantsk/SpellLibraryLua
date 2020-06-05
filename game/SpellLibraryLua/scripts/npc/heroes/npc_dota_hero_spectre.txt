@@ -1,6 +1,6 @@
 ""
 {
-	"ability_spectre_spectral_dagger"
+    "ability_spectre_spectral_dagger"
     {
         "BaseClass"                     "ability_lua"
         "ScriptFile"                    "heroes/spectre/ability_spectre_spectral_dagger.lua"
