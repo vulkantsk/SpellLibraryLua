@@ -1,0 +1,58 @@
+#base "heroes/npc_dota_hero_abaddon.txt"
+#base "heroes/npc_dota_hero_alchemist.txt"
+#base "heroes/npc_dota_hero_axe.txt"
+#base "heroes/npc_dota_hero_brewmaster.txt"
+#base "heroes/npc_dota_hero_bristleback.txt"
+#base "heroes/npc_dota_hero_centaur.txt"
+#base "heroes/npc_dota_hero_chaos_knight.txt"
+#base "heroes/npc_dota_hero_rattletrap.txt"
+#base "heroes/npc_dota_hero_antimage.txt"
+#base "heroes/npc_dota_hero_bane.txt"
+#base "heroes/npc_dota_hero_crystal_maiden.txt"
+#base "heroes/npc_dota_hero_dark_willow.txt"
+#base "heroes/npc_dota_hero_dazzle.txt"
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"templar_assassin_refraction_holdout"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"17.0 17.0 17.0 17.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_absorb"				"200 300 400 500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"20 40 60 80"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"17.0 17.0 17.0 17.0"
+			}
+		}
+	}
+}

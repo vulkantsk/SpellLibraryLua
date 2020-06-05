@@ -1,0 +1,114 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+
+	"npc_dota_hero_abaddon"
+	{
+		"ability1"	"ability_mist_coil"
+		"ability2"	"ability_aphotic_shield"
+		"ability3"	"ability_curse_of_avernus"
+		"ability6"	"ability_borrowed_time"
+	}
+
+	"npc_dota_hero_alchemist"
+	{
+		"Ability1"		"ability_acid_spray"
+		"Ability2"		"ability_unstable_concoction"
+		"Ability3"		"ability_unstable_concoction_throw"
+		"Ability4"		"ability_goblins_greed"
+		"Ability6"		"ability_chemical_rage"
+	}
+	"npc_dota_hero_axe"
+	{
+		"Ability1"		"ability_berserkers_call"
+		"Ability2"		"ability_battle_hunger"
+		"Ability3"		"ability_counter_helix"
+		"Ability6"		"ability_culling_blade"
+	}
+
+    "npc_dota_hero_brewmaster"
+    {
+        "Ability1"      "ability_thunder_clap"
+        "Ability2"      "ability_cinder_brew"
+        "Ability3"      "ability_drunken_brawler"
+        "Ability6"     "ability_primal_split"
+    }
+
+	"npc_dota_hero_centaur"
+	{
+		"Ability1"		"ability_hoof_stomp"
+		"Ability2"		"ability_double_edge"
+		"Ability3"		"ability_return"
+		"Ability6"		"ability_stampede"
+	}
+
+	"npc_dota_hero_bristleback"
+	{
+		"Ability1"		"ability_viscous_nasal_goo"
+		"Ability2"		"ability_quill_spray"
+		"Ability3"		"ability_bristleback"
+		"Ability6"		"ability_warpath"
+	}
+
+	"npc_dota_hero_chaos_knight"
+	{
+		"Ability1"		"ability_chaos_bolt"
+		"Ability2"		"ability_reality_rift"
+		"Ability3"		"ability_chaos_strike"
+		"Ability6"		"ability_phantasm"
+	}
+
+	"npc_dota_hero_rattletrap"
+	{
+		"Ability1"		"ability_battery_assault"
+		"Ability2"		"ability_power_cogs"
+		"Ability3"		"ability_rocket_flare"
+		"Ability6"		"ability_hookshot"
+	}
+
+	"npc_dota_hero_bane"
+	{
+		"Ability1"		"ability_nightmare"
+		"Ability2"		"ability_brain_sap"
+		"Ability3"		"ability_enfeeble"
+		"Ability6"		"ability_fiends_grip"
+		"Ability7"		"ability_nightmare_end"
+	}
+
+	"npc_dota_hero_crystal_maiden"
+	{
+		"Ability1"		"ability_crystal_nova"
+		"Ability2"		"ability_frostbite"
+		"Ability3"		"ability_brilliance_aura"
+		"Ability6"		"ability_freezing_field"
+	}
+
+	"npc_dota_hero_dark_willow"
+	{
+		"Ability1"		"ability_bramble_maze"
+		"Ability2"		"ability_shadow_realm"
+		"Ability3"		"ability_cursed_crown"
+		"Ability4"		"ability_bedlam"
+		"Ability6"		"ability_terrorize"
+
+	}
+
+	"npc_dota_hero_dazzle"
+	{
+		"Ability1"		"dazzle_poison_touch"
+		"Ability2"		"dazzle_shallow_grave"
+		"Ability3"		"dazzle_shadow_wave"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"dazzle_bad_juju"
+
+		"Ability7"		"ability_poison_touch"
+		"Ability8"		"ability_shallow_grave"
+		"Ability9"		"ability_shadow_wave"
+		"Ability10"		"ability_bad_juju"
+
+	}
+
+}
