@@ -110,5 +110,20 @@
 		"Ability10"		"ability_bad_juju"
 
 	}
+	"npc_dota_hero_spectre"
+	{
+		"Ability1"      "ability_spectre_spectral_dagger"
+		"Ability2"      "ability_spectre_desolate"
+		"Ability3"      "ability_spectre_dispersion"
+		"Ability4"      "ability_spectre_reality"
+		"Ability6"      "ability_spectre_haunt"
+	}
+	"npc_dota_hero_vengefulspirit"
+	{
+		"Ability1"      "ability_vengefulspirit_magic_missile"
+		"Ability2"      "ability_vengefulspirit_wave_of_terror"
+		"Ability3"      "ability_vengefulspirit_command_aura"
+		"Ability6"      "ability_vengefulspirit_nether_swap"
+	}
 
 }
