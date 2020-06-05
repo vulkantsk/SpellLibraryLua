@@ -1,9 +1,9 @@
 ""
 {
-    "ability_spectre_spectral_dagger"
+    "ability_spectral_dagger"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/spectre/ability_spectre_spectral_dagger.lua"
+        "ScriptFile"                    "heroes/spectre/spectral_dagger"
         "AbilityTextureName"            "spectre_spectral_dagger"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -90,10 +90,10 @@
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
     }
 
-    "ability_spectre_desolate"
+    "ability_desolate"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/spectre/ability_spectre_desolate.lua"
+        "ScriptFile"                    "heroes/spectre/desolate"
         "AbilityTextureName"            "spectre_desolate"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
@@ -127,10 +127,10 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
-    "ability_spectre_dispersion"
+    "ability_dispersion"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/spectre/ability_spectre_dispersion.lua"
+        "ScriptFile"                    "heroes/spectre/dispersion"
         "AbilityTextureName"            "spectre_dispersion"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
@@ -158,10 +158,10 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
     }
-    "ability_spectre_reality"
+    "ability_reality"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/spectre/ability_spectre_reality.lua"
+        "ScriptFile"                    "heroes/spectre/haunt"
         "AbilityTextureName"            "spectre_reality"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_POINT"
         "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
@@ -170,15 +170,16 @@
         "AbilityCooldown"               "0"
         "AbilityManaCost"               "0"
     }
-    "ability_spectre_haunt"
+    "ability_haunt"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/spectre/ability_spectre_haunt.lua"
+        "ScriptFile"                    "heroes/spectre/haunt"
         "AbilityTextureName"            "spectre_haunt"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "FightRecapLevel"               "2"
+		"LinkedAbility"					"ability_reality"
 
         "HasScepterUpgrade"         "1"
         "AbilityDraftPreAbility"        "spectre_reality"

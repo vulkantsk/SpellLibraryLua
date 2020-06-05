@@ -11,6 +11,17 @@
 #base "heroes/npc_dota_hero_crystal_maiden.txt"
 #base "heroes/npc_dota_hero_dark_willow.txt"
 #base "heroes/npc_dota_hero_dazzle.txt"
+
+#base "heroes/spectre/spectral_dagger.txt"
+#base "heroes/spectre/desolate.txt"
+#base "heroes/spectre/dispersion.txt"
+#base "heroes/spectre/haunt.txt"
+
+#base "heroes/vengeful_spirit/magic_missile.txt"
+#base "heroes/vengeful_spirit/wave_of_terror.txt"
+#base "heroes/vengeful_spirit/command_aura.txt"
+#base "heroes/vengeful_spirit/nether_swap.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

@@ -1,0 +1,52 @@
+""
+{
+	"ability_magic_missile"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/vengeful_spirit/magic_missile"
+        "AbilityTextureName"            "vengefulspirit_magic_missile"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES_STRONG"
+        "FightRecapLevel"               "1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "550"
+        "AbilityCastPoint"              "0.3 0.3 0.3 0.3"
+        
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "12 11 10 9"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 110 120 130"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "magic_missile_speed"   "900"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "magic_missile_stun"    "1.4 1.5 1.6 1.7"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "magic_missile_damage"  "90 180 270 360"
+                "LinkedSpecialBonus"    "special_bonus_unique_vengeful_spirit_1"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
+    }
+}

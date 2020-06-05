@@ -1,0 +1,51 @@
+""
+{
+    "ability_nether_swap"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/vengeful_spirit/nether_swap"
+        "AbilityTextureName"            "vengefulspirit_nether_swap"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "AbilityUnitTargetFlags"            "DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "FightRecapLevel"               "2"
+        "HasScepterUpgrade"         "1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "700 850 1000"
+        "AbilityCastPoint"              "0.4"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+        
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "0.0"
+        "AbilityCharges"                "2"
+        "AbilityChargeRestoreTime"      "90 80 70"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 150 200"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "scepter_radius"    "700"
+                "RequiresScepter"       "1"
+            }
+            "02"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "scepter_duration"  "2"
+                "RequiresScepter"       "1"
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 ""
 {
-	"ability_vengefulspirit_magic_missile"
+	"ability_magic_missile"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/vengefulspirit/ability_vengefulspirit_magic_missile.lua"
-        "AbilityTextureName"            "vengefulspirit_magic_missile"
+        "ScriptFile"                    "heroes/vengeful_spirit/magic_missile.lua"
+        "AbilityTextureName"            "vengeful_spirit_magic_missile"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -49,16 +49,16 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
     }
-    "ability_vengefulspirit_wave_of_terror"
+    "ability_wave_of_terror"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/vengefulspirit/ability_vengefulspirit_wave_of_terror.lua"
-        "AbilityTextureName"            "vengefulspirit_wave_of_terror"
+        "ScriptFile"                    "heroes/vengeful_spirit/wave_of_terror.lua"
+        "AbilityTextureName"            "vengeful_spirit_wave_of_terror"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
-        "AbilitySound"                  "Hero_VengefulSpirit.WaveOfTerror"
+        "AbilitySound"                  "Hero_Vengeful_Spirit.WaveOfTerror"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -111,11 +111,11 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
     }
-    "ability_vengefulspirit_command_aura"
+    "ability_command_aura"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/vengefulspirit/ability_vengefulspirit_command_aura.lua"
-        "AbilityTextureName"            "vengefulspirit_command_aura"
+        "ScriptFile"                    "heroes/vengeful_spirit/command_aura.lua"
+        "AbilityTextureName"            "vengeful_spirit_command_aura"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
         "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
@@ -158,11 +158,11 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
     }
-    "ability_vengefulspirit_nether_swap"
+    "ability_nether_swap"
     {
         "BaseClass"                     "ability_lua"
-        "ScriptFile"                    "heroes/vengefulspirit/ability_vengefulspirit_nether_swap.lua"
-        "AbilityTextureName"            "vengefulspirit_nether_swap"
+        "ScriptFile"                    "heroes/vengeful_spirit/nether_swap.lua"
+        "AbilityTextureName"            "vengeful_spirit_nether_swap"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"

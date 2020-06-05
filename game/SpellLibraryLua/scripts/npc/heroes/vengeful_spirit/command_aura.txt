@@ -1,0 +1,50 @@
+""
+{
+    "ability_command_aura"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/vengeful_spirit/command_aura"
+        "AbilityTextureName"            "vengefulspirit_command_aura"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+        
+        
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "1200"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "bonus_attributes"  "4 7 10 13"
+                "LinkedSpecialBonus"    "special_bonus_unique_vengeful_spirit_2"
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "bonus_attack_range"    "50 75 100 125"
+            }
+            "03"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "aura_radius"       "1200"
+            }           
+            "04"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "illusion_damage_out_pct"   "70 80 90 100"
+            }
+            "05"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "illusion_damage_in_pct"    "150"
+            }   
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+}
