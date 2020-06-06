@@ -47,6 +47,47 @@
 #base "heroes/bane/enfeeble.txt"
 #base "heroes/bane/fiends_grip.txt"
 
+#base "heroes/brewmaster/cinder_brew.txt"
+#base "heroes/brewmaster/drunken_brawler.txt"
+#base "heroes/brewmaster/primal_split.txt"
+#base "heroes/brewmaster/thunder_clap.txt"
+
+#base "heroes/bristleback/bristleback.txt"
+#base "heroes/bristleback/quill_spray.txt"
+#base "heroes/bristleback/viscous_nasal_goo.txt"
+#base "heroes/bristleback/warpath.txt"
+
+#base "heroes/centaur/double_edge.txt"
+#base "heroes/centaur/hoof_stomp.txt"
+#base "heroes/centaur/return.txt"
+#base "heroes/centaur/stampede.txt"
+
+#base "heroes/chaos_knight/chaos_bolt.txt"
+#base "heroes/chaos_knight/chaos_strike.txt"
+#base "heroes/chaos_knight/phantasm.txt"
+#base "heroes/chaos_knight/reality_rift.txt"
+
+#base "heroes/crystal_maiden/brilliance_aura.txt"
+#base "heroes/crystal_maiden/crystal_nova.txt"
+#base "heroes/crystal_maiden/freezing_field.txt"
+#base "heroes/crystal_maiden/frostbite.txt"
+
+#base "heroes/dark_willow/bedlam.txt"
+#base "heroes/dark_willow/bramble_maze.txt"
+#base "heroes/dark_willow/cursed_crown.txt"
+#base "heroes/dark_willow/shadow_realm.txt"
+#base "heroes/dark_willow/terrorize.txt"
+
+#base "heroes/dazzle/bad_juju.txt"
+#base "heroes/dazzle/poison_touch.txt"
+#base "heroes/dazzle/shadow_wave.txt"
+#base "heroes/dazzle/shallow_grave.txt"
+
+#base "heroes/rattletrap/battery_assault.txt"
+#base "heroes/rattletrap/hookshot.txt"
+#base "heroes/rattletrap/power_cogs.txt"
+#base "heroes/rattletrap/rocket_flare.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
