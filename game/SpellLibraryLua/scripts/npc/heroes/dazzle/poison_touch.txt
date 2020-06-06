@@ -1,0 +1,85 @@
+""
+{
+	"ability_poison_touch"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ScriptFile"					"heroes/dazzle/poison_touch"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"dazzle_poison_touch"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Dazzle.Poison_Touch"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500 600 700 800"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"27 24 21 18"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"110 120 130 140"
+				
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.35"	// Can apply multiple modifiers
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"start_radius"				"200 200 200 200"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"end_radius"				"300 300 300 300"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"end_distance"				"600 700 800 900"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"targets"					"2 4 6 8"
+			}
+			"05"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"16 28 40 52"
+				"LinkedSpecialBonus"	"special_bonus_unique_dazzle_3"
+			}
+			"06"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"slow"			"-14 -16 -18 -20"
+				"LinkedSpecialBonus"	"special_bonus_unique_dazzle_1"
+			}
+			"07"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"projectile_speed"	"1300"
+			}
+			"08"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"duration"		"4 5 6 7"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+}
