@@ -1,0 +1,40 @@
+""
+{
+	"ability_chaos_strike"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"                     "Ability_lua"
+        "ScriptFile"                    "heroes/chaos_knight/chaos_strike"
+        "AbilityTextureName"            "chaos_knight_chaos_strike"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySound"					"Hero_ChaosKnight.ChaosStrike"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_min"				"120"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_max"				"140 170 200 230"
+			}	
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"lifesteal"					"25 40 55 70"
+			}		
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+}
