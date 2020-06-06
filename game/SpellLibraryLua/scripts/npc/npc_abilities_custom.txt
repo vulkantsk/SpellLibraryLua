@@ -27,6 +27,11 @@
 #base "heroes/abaddon/curse_of_avernus.txt"
 #base "heroes/abaddon/borrowed_time.txt"
 
+#base "heroes/alchemist/acid_spray.txt"
+#base "heroes/alchemist/unstable_concoction.txt"
+#base "heroes/alchemist/goblins_greed.txt"
+#base "heroes/alchemist/chemical_rage.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
