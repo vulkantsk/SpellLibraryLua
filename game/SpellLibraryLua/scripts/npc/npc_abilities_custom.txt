@@ -37,6 +37,11 @@
 #base "heroes/antimage/counterspell.txt"
 #base "heroes/antimage/mana_void.txt"
 
+#base "heroes/axe/berserkers_call.txt"
+#base "heroes/axe/battle_hunger.txt"
+#base "heroes/axe/counter_helix.txt"
+#base "heroes/axe/culling_blade.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
