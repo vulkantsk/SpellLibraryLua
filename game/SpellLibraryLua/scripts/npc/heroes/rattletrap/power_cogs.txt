@@ -1,0 +1,79 @@
+""
+{
+	"ability_power_cogs"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "Ability_lua"
+        "ScriptFile"                    "heroes/rattletrap/power_cogs"
+        "AbilityTextureName"            "rattletrap_power_cogs"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySound"					"Hero_Rattletrap.Power_Cogs"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"5.0 6.0 7.0 8.0"
+			}
+			"02"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"damage"		"50 125 200 275"
+			}
+			"03"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"mana_burn"		"50 80 110 140"
+			}
+			"04"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"attacks_to_destroy"	"2"
+			}
+			"05"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"push_length"		"300"
+			}
+			"06"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"push_duration"		"1"
+			}
+			"07"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"cogs_radius"			"215"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"trigger_distance"			"185"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"extra_pull_buffer"			"-10"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+}
