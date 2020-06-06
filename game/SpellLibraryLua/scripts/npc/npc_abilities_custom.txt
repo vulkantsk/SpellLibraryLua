@@ -32,6 +32,11 @@
 #base "heroes/alchemist/goblins_greed.txt"
 #base "heroes/alchemist/chemical_rage.txt"
 
+#base "heroes/antimage/mana_break.txt"
+#base "heroes/antimage/blink.txt"
+#base "heroes/antimage/counterspell.txt"
+#base "heroes/antimage/mana_void.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
