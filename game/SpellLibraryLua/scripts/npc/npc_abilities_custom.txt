@@ -22,6 +22,11 @@
 #base "heroes/vengeful_spirit/command_aura.txt"
 #base "heroes/vengeful_spirit/nether_swap.txt"
 
+#base "heroes/abaddon/mist_coil.txt"
+#base "heroes/abaddon/aphotic_shield.txt"
+#base "heroes/abaddon/curse_of_avernus.txt"
+#base "heroes/abaddon/borrowed_time.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
