@@ -1,0 +1,65 @@
+""
+{
+	"ability_fiends_grip"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/bane/fiends_grip"
+        "AbilityTextureName"            "bane_fiends_grip"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_Bane.FiendsGrip"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"625"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityChannelTime"			"6.0 6.0 6.0"
+		"AbilityCooldown"				"120 110 100"
+
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"200 300 400"		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"fiend_grip_tick_interval"		"0.5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"fiend_grip_mana_drain"			"5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"abilitychanneltime"			""
+				"LinkedSpecialBonus"		"special_bonus_unique_bane_3"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"fiend_grip_damage"				"100 155 215"
+			}
+		}
+	}
+}
