@@ -42,6 +42,11 @@
 #base "heroes/axe/counter_helix.txt"
 #base "heroes/axe/culling_blade.txt"
 
+#base "heroes/bane/brain_sap.txt"
+#base "heroes/bane/nightmare.txt"
+#base "heroes/bane/enfeeble.txt"
+#base "heroes/bane/fiends_grip.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
