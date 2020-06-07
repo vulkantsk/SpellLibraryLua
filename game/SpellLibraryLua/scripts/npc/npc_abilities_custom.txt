@@ -88,6 +88,11 @@
 #base "heroes/rattletrap/power_cogs.txt"
 #base "heroes/rattletrap/rocket_flare.txt"
 
+#base "heroes/bloodseeker/bloodseeker_bloodrage.txt"
+#base "heroes/bloodseeker/bloodseeker_blood_bath.txt"
+#base "heroes/bloodseeker/bloodseeker_thirst.txt"
+#base "heroes/bloodseeker/bloodseeker_rupture.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
