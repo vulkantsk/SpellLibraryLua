@@ -79,6 +79,7 @@ function modifier_ability_bloodseeker_thirst:GetAuraEntityReject(ent)
     return true
 end
 
+if IsServer() then
 function modifier_ability_bloodseeker_thirst:OnIntervalThink()
     local caster = self:GetCaster()
 
@@ -128,6 +129,7 @@ function modifier_ability_bloodseeker_thirst:OnIntervalThink()
     end
 
     self:SetStackCount(stacks)
+end
 end
 
 function modifier_ability_bloodseeker_thirst:GetModifierAttackSpeedBonus_Constant() return self.bonus_attack_speed / (self.min_bonus_pct - self.max_bonus_pct) * self:GetStackCount() end
