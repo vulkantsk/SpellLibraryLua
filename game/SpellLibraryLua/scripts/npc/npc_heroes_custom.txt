@@ -92,7 +92,6 @@
 		"Ability3"		"ability_cursed_crown"
 		"Ability4"		"ability_bedlam"
 		"Ability6"		"ability_terrorize"
-
 	}
 
 	"npc_dota_hero_dazzle"
@@ -103,7 +102,6 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"ability_bad_juju"
-
 	}
 
 	"npc_dota_hero_spectre"
@@ -114,7 +112,6 @@
 		"Ability4"		"ability_reality"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"ability_haunt"
-
 	}
 
 	"npc_dota_hero_vengefulspirit"
@@ -125,7 +122,15 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"ability_nether_swap"
-
+	}
+	"npc_dota_hero_bloodseeker"
+	{
+		"Ability1"      "ability_bloodseeker_bloodrage"
+		"Ability2"      "ability_bloodseeker_blood_bath"
+		"Ability3"      "ability_bloodseeker_thirst"
+		"Ability4"      "generic_hidden"
+		"Ability5"      "generic_hidden"
+		"Ability6"      "ability_bloodseeker_rupture"
 	}
 
 }
