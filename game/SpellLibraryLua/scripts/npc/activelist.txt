@@ -19,5 +19,6 @@
 	"npc_dota_hero_dazzle"			"1"
 	"npc_dota_hero_spectre"		"1"
 	"npc_dota_hero_vengefulspirit"		"1"
-
+	"npc_dota_hero_bloodseeker"		"1"
+	
 }
