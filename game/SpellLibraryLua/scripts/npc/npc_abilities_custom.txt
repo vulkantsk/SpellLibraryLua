@@ -93,6 +93,11 @@
 #base "heroes/bloodseeker/bloodseeker_thirst.txt"
 #base "heroes/bloodseeker/bloodseeker_rupture.txt"
 
+#base "heroes/zuus/zuus_arc_lightning.txt"
+#base "heroes/zuus/zuus_lightning_bolt.txt"
+#base "heroes/zuus/zuus_static_field.txt"
+#base "heroes/zuus/zuus_thundergods_wrath.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
