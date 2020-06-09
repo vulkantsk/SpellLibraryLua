@@ -132,5 +132,14 @@
 		"Ability5"      "generic_hidden"
 		"Ability6"      "ability_bloodseeker_rupture"
 	}
+	"npc_dota_hero_zuus"
+	{
+		"Ability1"      "ability_zuus_arc_lightning"
+		"Ability2"      "ability_zuus_lightning_bolt"
+		"Ability3"      "ability_zuus_static_field"
+		"Ability4"      "zuus_cloud"
+		"Ability5"      "generic_hidden"
+		"Ability6"      "ability_zuus_thundergods_wrath"
+	}
 
 }
