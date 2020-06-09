@@ -55,6 +55,7 @@ end
 function modifier_ability_bloodseeker_rupture:OnIntervalThink()
     local caster = self:GetCaster()
     local target = self:GetParent()
+        
     local newPos = target:GetAbsOrigin()
     if self.oldPos == nil then
         self.oldPos = newPos
