@@ -1,0 +1,69 @@
+""
+{
+    "ability_zuus_lightning_bolt"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/zuus/lightning_bolt.lua"
+        "AbilityTextureName"            "zuus_lightning_bolt"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "FightRecapLevel"               "1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "700 750 800 850"
+        "AbilityCastPoint"              "0.4 0.4 0.4 0.4"
+
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                 "125 200 275 350"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "6.0 6.0 6.0 6.0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "90 105 120 135"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportValue"   "0.1"   // just a ministun
+
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "true_sight_radius"     "750"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "sight_radius_day"      "750"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "sight_radius_night"    "750"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "sight_duration"        "4.5"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "spread_aoe"    "325"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}
