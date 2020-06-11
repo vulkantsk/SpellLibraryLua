@@ -1,0 +1,38 @@
+""
+{
+    "ability_sven_great_cleave"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/sven/great_cleave.lua"
+        "AbilityTextureName"            "sven_great_cleave"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+                
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {                       
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "cleave_starting_width"         "150"
+            }           
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "cleave_ending_width"           "360"
+            }           
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "cleave_distance"           "650"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "great_cleave_damage"   "30 50 70 90"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}

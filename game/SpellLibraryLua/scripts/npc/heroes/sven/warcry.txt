@@ -1,0 +1,57 @@
+""
+{
+    "ability_sven_warcry"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/sven/warcry.lua"
+        "AbilityTextureName"            "sven_warcry"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastAnimation"          "ACT_DOTA_OVERRIDE_ABILITY_3"
+        "AbilityCastGestureSlot"        "DEFAULT"
+        "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "32 28 24 20"
+    
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "60"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "movespeed"         "10 14 18 22"
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "bonus_armor"       "6 9 12 15"     
+            }
+            "03"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "bonus_damage"      "12 16 20 24"       
+            }
+            "04"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "radius"        "700"
+            }
+            "05"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "duration"      "8"
+            }
+        }
+    }
+}

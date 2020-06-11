@@ -84,6 +84,11 @@
 #base "heroes/zuus/static_field.txt"
 #base "heroes/zuus/thundergods_wrath.txt"
 
+#base "heroes/sven/storm_bolt.txt"
+#base "heroes/sven/great_cleave.txt"
+#base "heroes/sven/warcry.txt"
+#base "heroes/sven/gods_strength.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

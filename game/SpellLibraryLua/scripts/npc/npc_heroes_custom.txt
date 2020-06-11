@@ -141,5 +141,14 @@
 		"Ability5"      "generic_hidden"
 		"Ability6"      "ability_zuus_thundergods_wrath"
 	}
+	"npc_dota_hero_sven"
+    {
+        "Ability1"      "ability_sven_storm_bolt"
+        "Ability2"      "ability_sven_great_cleave"
+        "Ability3"      "ability_sven_warcry"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_sven_gods_strength"
+    }
 
 }

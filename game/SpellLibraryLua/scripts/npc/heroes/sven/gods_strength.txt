@@ -1,0 +1,45 @@
+""
+{
+    "ability_sven_gods_strength"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/sven/gods_strength.lua"
+        "AbilityTextureName"            "sven_gods_strength"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "FightRecapLevel"               "1"
+        
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastAnimation"          "ACT_DOTA_OVERRIDE_ABILITY_4"
+        "AbilityCastGestureSlot"        "DEFAULT"
+        "AbilityCastPoint"              "0.3 0.3 0.3"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "110"
+        "AbilityDuration"               "25.0"
+    
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 150 200"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "gods_strength_damage"      "80 120 160"        
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "gods_strength_bonus_str"       "10 20 30"      
+                "LinkedSpecialBonus"        "special_bonus_unique_sven_2"
+            }       
+        }
+    }
+}
