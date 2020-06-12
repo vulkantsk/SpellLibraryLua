@@ -1,0 +1,41 @@
+""
+{
+    "ability_lina_fiery_soul"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/lina/fiery_soul.lua"
+        "AbilityTextureName"            "lina_fiery_soul"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "fiery_soul_attack_speed_bonus" "40 55 70 85"
+                "LinkedSpecialBonus"            "special_bonus_unique_lina_2"               
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_FLOAT"
+                "fiery_soul_move_speed_bonus"   "5 6 7 8"
+                "LinkedSpecialBonus"            "special_bonus_unique_lina_2"
+                "LinkedSpecialBonusField"       "value2"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "fiery_soul_max_stacks"     "3"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "fiery_soul_stack_duration"         "10"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+}

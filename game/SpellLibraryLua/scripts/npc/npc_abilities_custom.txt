@@ -89,6 +89,11 @@
 #base "heroes/sven/warcry.txt"
 #base "heroes/sven/gods_strength.txt"
 
+#base "heroes/lina/dragon_slave.txt"
+#base "heroes/lina/light_strike_array.txt"
+#base "heroes/lina/fiery_soul.txt"
+#base "heroes/lina/laguna_blade.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

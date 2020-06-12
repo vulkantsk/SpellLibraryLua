@@ -22,4 +22,5 @@
 	"npc_dota_hero_bloodseeker"		"1"
 	"npc_dota_hero_zuus"			"1"
 	"npc_dota_hero_sven"			"1"
+	"npc_dota_hero_lina"			"1"
 }

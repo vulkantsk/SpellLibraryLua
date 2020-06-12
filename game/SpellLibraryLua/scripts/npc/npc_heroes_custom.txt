@@ -150,5 +150,13 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_sven_gods_strength"
     }
-
+    "npc_dota_hero_lina"
+    {
+        "Ability1"      "ability_lina_dragon_slave"
+        "Ability2"      "ability_lina_light_strike_array"
+        "Ability3"      "ability_lina_fiery_soul"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_lina_laguna_blade"
+    }
 }
