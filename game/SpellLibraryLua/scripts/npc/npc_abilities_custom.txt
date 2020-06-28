@@ -94,6 +94,11 @@
 #base "heroes/lina/fiery_soul.txt"
 #base "heroes/lina/laguna_blade.txt"
 
+#base "heroes/disruptor/thunder_strike.txt"
+#base "heroes/disruptor/glimpse.txt"
+#base "heroes/disruptor/kinetic_field.txt"
+#base "heroes/disruptor/static_storm.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

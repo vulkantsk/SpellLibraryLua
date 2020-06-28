@@ -159,4 +159,14 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_lina_laguna_blade"
     }
+
+    "npc_dota_hero_disruptor"
+    {
+        "Ability1"      "ability_disruptor_thunder_strike"
+        "Ability2"      "ability_disruptor_glimpse"
+        "Ability3"      "ability_disruptor_kinetic_field"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_disruptor_static_storm"
+    }
 }
