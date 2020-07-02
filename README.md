@@ -107,3 +107,10 @@ end
 --Take out of the class only what changes during the game, such as increasing the absolute speed, as here
 function modifier_ABILITYNAME_EXAMPLE:GetModifierMoveSpeed_Absolute() return self.movespeed end
 ```
+
+## Recommended resources
+
+* [ModDota](https://moddota.com/) the great Moddota tutorial collection and API libraries
+* [Workshop Tools Wiki](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools) the official Dota 2 Workshop Tools wiki
+* [CustomGames](https://customgames.ru/forum/) forum with useful information where you can ask what you need
+* [Standart Dota files](https://github.com/SteamDatabase/GameTracking-Dota2/tree/master/game/dota/pak01_dir) You can take the names of all the sounds you are interested in from here
