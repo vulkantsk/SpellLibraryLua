@@ -1,12 +1,7 @@
-# addon-dota2-template-for-git
-![addons and git](https://github.com/pvp-by/addon-dota2-template-for-git/blob/master/mklink_repo.png)
-============
+## **SpellLibraryLua** 
 
-## **[ENG]** 
+This repository is a collection of remade Dota 2 Hero abilities for the use of the Dota2 modding community by the Dota2 modding community
 
-template for init custom addon dota2 and git repository <br>
+If you have any questions regarding the project or if you have found a bug/issue with the spells then feel free to [create an issue](https://github.com/vulkantsk/SpellLibraryLua/issues/new).
 
-## **[RUS]**
-
-
-Шаблон для Dota2 и git хранилища при работе с custom_addons
+[Progress so far](https://docs.google.com/spreadsheets/d/1By8Ccpom5_8i80zciTsneFfCjUOXsWzBDa0Clo9QKWQ/edit#gid=0)
