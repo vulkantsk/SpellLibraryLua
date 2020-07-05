@@ -1,0 +1,64 @@
+""
+{
+    "ability_phantom_assassin_blur"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/phantom_assassin/blur.lua"
+        "AbilityTextureName"            "phantom_assassin_blur"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "HasScepterUpgrade"         "1"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "60 55 50 45"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "600"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"              "0.4"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50"
+    
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "bonus_evasion"             "20 30 40 50"
+                "LinkedSpecialBonus"        "special_bonus_unique_phantom_assassin_3"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "duration"          "25"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "radius"                "600"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "fade_duration"         "0.75"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "scepter_cooldown"          "12"
+                "RequiresScepter"       "1"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+}

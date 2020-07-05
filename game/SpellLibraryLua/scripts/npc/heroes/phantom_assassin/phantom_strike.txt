@@ -1,0 +1,45 @@
+""
+{
+    "ability_phantom_assassin_phantom_strike"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/phantom_assassin/phantom_strike.lua"
+        "AbilityTextureName"            "phantom_assassin_phantom_strike"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CUSTOM"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "1000 1000 1000 1000"
+        "AbilityCastPoint"              "0.25"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "11 9 7 5"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "35 40 45 50"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_attack_speed"    "100 125 150 175"
+            }
+            
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "2.0"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}

@@ -1,0 +1,32 @@
+""
+{
+    "ability_phantom_assassin_coup_de_grace"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/phantom_assassin/coup_de_grace.lua"
+        "AbilityTextureName"            "phantom_assassin_coup_de_grace"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "crit_chance"               "15"
+                "LinkedSpecialBonus"        "special_bonus_unique_phantom_assassin_2"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "crit_bonus"                "200 325 450"
+                "LinkedSpecialBonus"        "special_bonus_unique_phantom_assassin_4"
+            }
+        }
+    }
+}

@@ -169,4 +169,14 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_disruptor_static_storm"
     }
+
+    "npc_dota_hero_phantom_assassin"
+    {
+        "Ability1"      "ability_phantom_assassin_stifling_dagger"
+        "Ability2"      "ability_phantom_assassin_phantom_strike"
+        "Ability3"      "ability_phantom_assassin_blur"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_phantom_assassin_coup_de_grace"
+    }
 }

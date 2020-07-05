@@ -99,6 +99,11 @@
 #base "heroes/disruptor/kinetic_field.txt"
 #base "heroes/disruptor/static_storm.txt"
 
+#base "heroes/phantom_assassin/stifling_dagger.txt"
+#base "heroes/phantom_assassin/phantom_strike.txt"
+#base "heroes/phantom_assassin/blur.txt"
+#base "heroes/phantom_assassin/coup_de_grace.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
