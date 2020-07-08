@@ -179,4 +179,14 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_phantom_assassin_coup_de_grace"
     }
+
+    "npc_dota_hero_lion"
+    {
+        "Ability1"      "ability_lion_impale"
+        "Ability2"      "ability_lion_voodoo"
+        "Ability3"      "ability_lion_mana_drain"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_lion_finger_of_death"
+    }
 }

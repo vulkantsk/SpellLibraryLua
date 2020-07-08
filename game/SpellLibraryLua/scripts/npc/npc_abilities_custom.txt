@@ -104,6 +104,11 @@
 #base "heroes/phantom_assassin/blur.txt"
 #base "heroes/phantom_assassin/coup_de_grace.txt"
 
+#base "heroes/lion/impale.txt"
+#base "heroes/lion/voodoo.txt"
+#base "heroes/lion/mana_drain.txt"
+#base "heroes/lion/finger_of_death.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
