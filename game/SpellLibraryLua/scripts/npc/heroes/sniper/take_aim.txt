@@ -1,0 +1,44 @@
+""
+{
+    "ability_sniper_take_aim"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/sniper/take_aim.lua"
+        "AbilityTextureName"            "sniper_take_aim"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+    
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "0"
+        "AbilityCastPoint"              "0 0 0 0"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "9 8 7 6"
+
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "30"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "bonus_attack_range"            "100 200 300 400"
+                "LinkedSpecialBonus"            "special_bonus_unique_sniper_6"
+            }
+            "02"
+            {
+                "var_type"                                  "FIELD_INTEGER"
+                "active_attack_range_multiplier"            "2"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+    }
+}

@@ -1,0 +1,44 @@
+""
+{
+    "ability_sniper_headshot"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/sniper/headshot.lua"
+        "AbilityTextureName"            "sniper_headshot"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                 "20 50 80 110"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_FLOAT"
+                "slow_duration"                 "0.5"
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "proc_chance"                   "40"
+            }
+            "03"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "knockback_distance"                    "10"
+                "LinkedSpecialBonus"    "special_bonus_unique_sniper_3"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "slow"          "-100"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}

@@ -189,4 +189,14 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_lion_finger_of_death"
     }
+
+    "npc_dota_hero_sniper"
+    {
+        "Ability1"      "ability_sniper_shrapnel"
+        "Ability2"      "ability_sniper_headshot"
+        "Ability3"      "ability_sniper_take_aim"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_sniper_assassinate"
+    }
 }

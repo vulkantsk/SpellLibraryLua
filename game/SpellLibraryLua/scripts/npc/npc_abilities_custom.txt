@@ -109,6 +109,11 @@
 #base "heroes/lion/mana_drain.txt"
 #base "heroes/lion/finger_of_death.txt"
 
+#base "heroes/sniper/shrapnel.txt"
+#base "heroes/sniper/headshot.txt"
+#base "heroes/sniper/take_aim.txt"
+#base "heroes/sniper/assassinate.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
