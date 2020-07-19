@@ -40,9 +40,9 @@ function modifier_ability_goblins_greed_lua:OnCreated(data)
     self:SetStackCount(self.startGold)
 end
 
-function modifier_ability_goblins_greed_lua:OnDeath(data) 
+function modifier_ability_goblins_greed_lua:OnDeath(data)
 
-    if data.unit:IsCreep() and data.attacker == self.parent then 
+    if data.unit:IsCreep() or data.unit:IsRealHero() and data.unit:GetTeam() ~= data.attacker:GetTeam() and data.attacker == self.parent then 
 
         self.parent:ModifyGold(self:GetStackCount(), true, DOTA_ModifyGold_CreepKill)
         SendOverheadEventMessage(self.parent:GetPlayerOwner(), OVERHEAD_ALERT_GOLD, self.parent, self:GetStackCount(), self.parent:GetPlayerOwner())
@@ -71,4 +71,4 @@ function modifier_ability_goblins_greed_lua_timer:OnDestroy()
     if not modifier then return end
 
     modifier:SetStackCount(math.max(modifier:GetStackCount() - self:GetStackCount(),modifier.startGold))
-end 
+end

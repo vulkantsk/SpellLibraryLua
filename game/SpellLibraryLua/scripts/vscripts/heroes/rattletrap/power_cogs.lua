@@ -6,7 +6,7 @@ function ability_power_cogs:OnSpellStart()
     local caster = self:GetCaster()
     local vOrigin = caster:GetAbsOrigin()
     local duration = self:GetSpecialValueFor('duration')
-    local radius = 215
+    local radius = self:GetSpecialValueFor("cogs_radius")
 
     local units = FindUnitsInRadius(caster:GetTeam(), 
     vOrigin, 

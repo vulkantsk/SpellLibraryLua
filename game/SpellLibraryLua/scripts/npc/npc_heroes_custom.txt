@@ -16,8 +16,8 @@
 	{
 		"Ability1"		"ability_acid_spray"
 		"Ability2"		"ability_unstable_concoction"
-		"Ability3"		"ability_unstable_concoction_throw"
-		"Ability4"		"ability_goblins_greed"
+		"Ability3"		"ability_goblins_greed"
+		"Ability4"		"ability_unstable_concoction_throw"
 		"Ability6"		"ability_chemical_rage"
 	}
 	"npc_dota_hero_axe"

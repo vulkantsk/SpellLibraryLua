@@ -85,7 +85,7 @@ function modifier_ability_berserkers_call_buff_armor:DeclareFunctions()
 end
 
 function modifier_ability_berserkers_call_buff_armor:GetModifierPhysicalArmorBonus()
-	return self:GetStackCount()
+	return self:GetAbility():GetSpecialValueFor("bonus_armor")
 end
 
 function modifier_ability_berserkers_call_buff_armor:OnCreated()
@@ -94,7 +94,6 @@ function modifier_ability_berserkers_call_buff_armor:OnCreated()
 	local caster_particle = ParticleManager:CreateParticle( "particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetCaster())
 	ParticleManager:SetParticleControl(caster_particle, 2, Vector(0, 0, 0))
     ParticleManager:ReleaseParticleIndex(caster_particle)
-    self:SetStackCount(self:GetAbility():GetSpecialValueFor( "bonus_armor"))
 	return true
 end
 

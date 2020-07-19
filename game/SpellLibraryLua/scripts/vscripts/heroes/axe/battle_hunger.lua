@@ -74,6 +74,7 @@ modifier_imba_battle_hunger_debuff_dot = class({
     AllowIllusionDuplicate  = function(self) return true end,
     DeclareFunctions        = function(self) return {
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+        MODIFIER_EVENT_ON_DEATH
     } end,
     GetModifierMoveSpeedBonus_Percentage = function(self) return self.reduction_movespeed end,
 
@@ -82,16 +83,21 @@ modifier_imba_battle_hunger_debuff_dot = class({
 })
 
 function modifier_imba_battle_hunger_debuff_dot:OnRefresh()
-    self.reduction_movespeed = self:GetAbility():GetSpecialValueFor('slow')
-    self.damage = self:GetAbility():GetSpecialValueFor('damage_per_second')
-end 
+    self:OnCreated()
+end
 
 function modifier_imba_battle_hunger_debuff_dot:OnCreated()
     self.reduction_movespeed = self:GetAbility():GetSpecialValueFor('slow')
     self.damage = self:GetAbility():GetSpecialValueFor('damage_per_second')
 
     self:StartIntervalThink(1)
-end 
+end
+
+function modifier_imba_battle_hunger_debuff_dot:OnDeath(params)
+    if params.attacker == self:GetParent() then
+        self:Destroy()
+    end
+end
 
 function modifier_imba_battle_hunger_debuff_dot:OnIntervalThink()
     if IsClient() then return end
@@ -103,4 +109,4 @@ function modifier_imba_battle_hunger_debuff_dot:OnIntervalThink()
         damage_type = DAMAGE_TYPE_MAGICAL,
         ability = self:GetAbility(),
     })
-end 
+end

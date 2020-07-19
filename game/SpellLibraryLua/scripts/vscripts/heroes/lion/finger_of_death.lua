@@ -67,7 +67,7 @@ modifier_ability_lion_finger_of_death_delay = class({
 
 if IsServer() then
 function modifier_ability_lion_finger_of_death_delay:OnDestroy()
-    if self:GetParent():IsMagicImmune() or self:GetParent():IsInvulnerable() or self:GetParent:IsOutOfGame() then return end
+    if self:GetParent():IsMagicImmune() or self:GetParent():IsInvulnerable() or self:GetParent():IsOutOfGame() then return end
     
     self.damage = self:GetAbility():GetSpecialValueFor("damage")
     self.damage_per_kill = self:GetAbility():GetSpecialValueFor("damage_per_kill")

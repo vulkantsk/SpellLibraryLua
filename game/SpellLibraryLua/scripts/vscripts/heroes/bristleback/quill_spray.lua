@@ -6,7 +6,7 @@ function ability_quill_spray:OnSpellStart()
 	
 	local radius					= self:GetSpecialValueFor("radius")
     local projectile_speed		= self:GetSpecialValueFor("projectile_speed")
-    local duration = self:GetSpecialValueFor("projectile_speed")
+    local duration = self:GetSpecialValueFor("quill_stack_duration")
     local quill_stack_damage = self:GetSpecialValueFor("quill_stack_damage")
     local quill_base_damage = self:GetSpecialValueFor("quill_base_damage")
     local caster = self:GetCaster()

@@ -1,10 +1,12 @@
 ability_unstable_concoction_throw = class({})
 
-function ability_unstable_concoction_throw:OnSpellStart() 
+function ability_unstable_concoction_throw:GetAOERadius() return self:GetSpecialValueFor("midair_explosion_radius") end
+
+function ability_unstable_concoction_throw:OnSpellStart()
     local modifierCounter = self:GetCaster():FindModifierByName('modifier_unstable_concoction_lua_counter')
     if not modifierCounter then return end
     local abilityOwner = self:GetCaster():FindAbilityByName('ability_unstable_concoction')
-    if not abilityOwner then return end 
+    if not abilityOwner then return end
 
     local maxDMG = abilityOwner:GetLevelSpecialValueFor('max_damage', self:GetLevel() - 1)
     local maxStun = abilityOwner:GetLevelSpecialValueFor('max_stun', self:GetLevel() - 1)
@@ -22,15 +24,15 @@ function ability_unstable_concoction_throw:OnSpellStart()
     ProjectileManager:CreateTrackingProjectile({
         Target = self:GetCursorTarget(),
         Source = self:GetCaster(),
-        Ability = self,	
+        Ability = self,
         EffectName = "particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_projectile.vpcf",
         iMoveSpeed = self:GetSpecialValueFor('movement_speed'),
         vSourceLoc= self:GetCaster():GetAbsOrigin(),
-        bDrawsOnMinimap = false,                         
-        bDodgeable = false,                                
-        bIsAttack = false,                               
-        bVisibleToEnemies = true,                         
-        bReplaceExisting = false,                        
+        bDrawsOnMinimap = false,
+        bDodgeable = false,
+        bIsAttack = false,
+        bVisibleToEnemies = true,
+        bReplaceExisting = false,
         bProvidesVision = true,
         iVisionRadius = self:GetSpecialValueFor('vision_range'),
         iVisionTeamNumber = self:GetCaster():GetTeamNumber()
@@ -41,15 +43,18 @@ end
 function ability_unstable_concoction_throw:OnProjectileHit(hTarget, vLocation)
     if not hTarget then return end
 
-    ApplyDamage({
-        victim = hTarget,
-        attacker = self:GetCaster(),
-        ability = self,
-        damage = self.damage,
-        damage_type = DAMAGE_TYPE_PHYSICAL,
-    })
+    local enemies = FindUnitsInRadius(self:GetCaster():GetTeam(), vLocation, nil, self:GetSpecialValueFor("midair_explosion_radius"), self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags(), 0, false)
+    for _, target in pairs(enemies) do
+        ApplyDamage({
+            victim = target,
+            attacker = self:GetCaster(),
+            ability = self,
+            damage = self.damage,
+            damage_type = DAMAGE_TYPE_PHYSICAL,
+        })
 
-    hTarget:AddNewModifier(self:GetCaster(), self, 'modifier_stunned', {duration = self.durStun})
+        target:AddNewModifier(self:GetCaster(), self, 'modifier_stunned', {duration = self.durStun})
+    end
     hTarget:EmitSound("Hero_Alchemist.UnstableConcoction.Stun")
 
     local nfx = ParticleManager:CreateParticle('particles/econ/items/alchemist/alchemist_smooth_criminal/alchemist_smooth_criminal_unstable_concoction_explosion.vpcf', PATTACH_ABSORIGIN, hTarget)

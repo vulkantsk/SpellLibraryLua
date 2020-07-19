@@ -7,7 +7,7 @@ function ability_acid_spray:OnSpellStart()
     ParticleManager:ReleaseParticleIndex(nfx)
     local modifier = CreateModifierThinker(self:GetCaster(), self, 'modifier_acid_spray_lua_aura', {duration = self:GetSpecialValueFor('duration')}, self:GetCursorPosition(), self:GetCaster():GetTeam(), false)
 end
-
+function ability_acid_spray:GetAOERadius() return self:GetSpecialValueFor("radius") end
 modifier_acid_spray_lua_aura = class({
     IsHidden                = function(self) return true end,
     IsPurgable              = function(self) return false end,
