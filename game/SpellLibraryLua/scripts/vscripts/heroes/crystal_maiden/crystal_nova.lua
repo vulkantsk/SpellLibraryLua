@@ -1,5 +1,7 @@
 ability_crystal_nova = class({})
 
+function ability_crystal_nova:GetAOERadius() return self:GetSpecialValueFor("radius") end
+
 function ability_crystal_nova:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()

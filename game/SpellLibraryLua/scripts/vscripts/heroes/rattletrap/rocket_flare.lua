@@ -1,6 +1,8 @@
 ability_rocket_flare = class({})
 LinkLuaModifier('modifier_ability_rocket_flare_dummy', 'heroes/rattletrap/rocket_flare', LUA_MODIFIER_MOTION_NONE)
 
+function ability_rocket_flare:GetAOERadius() return self:GetSpecialValueFor("radius") end
+
 function ability_rocket_flare:OnSpellStart()
     local caster = self:GetCaster()
     local targetPos = self:GetCursorPosition()

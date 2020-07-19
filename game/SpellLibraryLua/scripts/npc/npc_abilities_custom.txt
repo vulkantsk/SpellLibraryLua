@@ -114,6 +114,16 @@
 #base "heroes/sniper/take_aim.txt"
 #base "heroes/sniper/assassinate.txt"
 
+#base "heroes/skywrath_mage/arcane_bolt.txt"
+#base "heroes/skywrath_mage/concussive_shot.txt"
+#base "heroes/skywrath_mage/ancient_seal.txt"
+#base "heroes/skywrath_mage/mystic_flare.txt"
+
+#base "heroes/slardar/sprint.txt"
+#base "heroes/slardar/slithereen_crush.txt"
+#base "heroes/slardar/bash.txt"
+#base "heroes/slardar/amplify_damage.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

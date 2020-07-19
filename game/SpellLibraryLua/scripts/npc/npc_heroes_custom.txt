@@ -6,10 +6,10 @@
 
 	"npc_dota_hero_abaddon"
 	{
-		"ability1"	"ability_mist_coil"
-		"ability2"	"ability_aphotic_shield"
-		"ability3"	"ability_curse_of_avernus"
-		"ability6"	"ability_borrowed_time"
+		"Ability1"	"ability_mist_coil"
+		"Ability2"	"ability_aphotic_shield"
+		"Ability3"	"ability_curse_of_avernus"
+		"Ability6"	"ability_borrowed_time"
 	}
 
 	"npc_dota_hero_alchemist"
@@ -40,7 +40,7 @@
 	{
 		"Ability1"		"ability_hoof_stomp"
 		"Ability2"		"ability_double_edge"
-		"Ability3"		"ability_return"
+		"Ability3"		"ability_centaur_return"
 		"Ability6"		"ability_stampede"
 	}
 
@@ -199,4 +199,20 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_sniper_assassinate"
     }
+
+	"npc_dota_hero_skywrath_mage"
+	{
+		"Ability1"		"ability_skywrath_mage_arcane_bolt"
+		"Ability2"		"ability_skywrath_mage_concussive_shot"
+		"Ability3"		"ability_skywrath_mage_ancient_seal"
+		"Ability6"		"ability_skywrath_mage_mystic_flare"
+	}
+
+	"npc_dota_hero_slardar"
+	{
+		"Ability1"		"ability_slardar_sprint"
+		"Ability2"		"ability_slardar_slithereen_crush"
+		"Ability3"		"ability_slardar_bash"
+		"Ability6"		"ability_slardar_amplify_damage"
+	}
 }

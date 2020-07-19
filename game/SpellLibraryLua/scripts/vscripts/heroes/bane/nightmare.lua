@@ -116,6 +116,7 @@ function modifier_ability_nightmare_debuff:OnCreated( kv )
 		local sound_loop = "Hero_Bane.Nightmare.Loop"
 		EmitSoundOn( sound_cast, self:GetParent() )
 		EmitSoundOn( sound_loop, self:GetParent() )
+		self:StartIntervalThink(self:GetAbility():GetSpecialValueFor("nightmare_invuln_time"))
 	end
 end
 
@@ -191,7 +192,9 @@ function modifier_ability_nightmare_debuff:CheckState()
 	local state = {
 		[MODIFIER_STATE_INVULNERABLE] = self.invulnerable,
 		[MODIFIER_STATE_NIGHTMARED] = true,
+		[MODIFIER_STATE_LOW_ATTACK_PRIORITY] = true,
 		[MODIFIER_STATE_STUNNED] = true,
+		[MODIFIER_STATE_SPECIALLY_DENIABLE] = true
 	}
 
 	return state
@@ -201,6 +204,7 @@ end
 -- Interval Effects
 function modifier_ability_nightmare_debuff:OnIntervalThink()
 	self.invulnerable = false
+	self:StartIntervalThink(-1)
 end
 
 --------------------------------------------------------------------------------

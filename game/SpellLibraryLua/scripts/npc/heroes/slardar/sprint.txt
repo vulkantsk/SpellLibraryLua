@@ -1,0 +1,69 @@
+""
+{
+	"ability_slardar_sprint"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/slardar/sprint.lua"
+		"AbilityTextureName"			"slardar_sprint"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_Slardar.Sprint"
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"25"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"17"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_speed"				"18 26 34 42"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"10"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"river_speed"				"7 19 31 43"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"puddle_regen"				"35"
+				"RequiresScepter"			"1"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"puddle_armor"				"12"
+				"RequiresScepter"			"1"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"puddle_status_resistance"			"40"
+				"RequiresScepter"			"1"
+			}
+            "07"
+            {
+                "var_type"					"FIELD_INTEGER"
+                "river_speed_tooltip"		"25 45 65 85"
+            }
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+}

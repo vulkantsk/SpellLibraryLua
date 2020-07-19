@@ -54,13 +54,11 @@ function ability_cinder_brew:OnProjectileHit(hTarget, vLocation)
     FIND_ANY_ORDER, 
     false)
     local duration = self:GetSpecialValueFor('duration')
-    local movement_slow = self:GetSpecialValueFor('movement_slow')
     local total_damage = self:GetSpecialValueFor('total_damage')
     local extra_duration = self:GetSpecialValueFor('extra_duration')
     for k,v in pairs(units) do 
         v:AddNewModifier(self:GetCaster(), self, 'modifier_ability_cinder_brew_debuff', {
             duration = duration,
-            movement_slow = -movement_slow,
             total_damage = total_damage,
             extra_duration = extra_duration
         })
@@ -83,7 +81,7 @@ modifier_ability_cinder_brew_debuff = class({
 })
 
 function modifier_ability_cinder_brew_debuff:OnCreated(data)
-    self.movespeed  = data.movement_slow
+    self.movespeed  = -self:GetAbility():GetSpecialValueFor('movement_slow')
     self.totaldamage = data.total_damage
     self.extra_duration = data.extra_duration
 end 
