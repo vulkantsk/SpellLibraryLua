@@ -215,4 +215,12 @@
 		"Ability3"		"ability_slardar_bash"
 		"Ability6"		"ability_slardar_amplify_damage"
 	}
+
+	"npc_dota_hero_storm_spirit"
+	{
+		"Ability1"		"ability_storm_spirit_static_remnant"
+		"Ability2"		"ability_storm_spirit_electric_vortex"
+		"Ability3"		"ability_storm_spirit_overload"
+		"Ability6"		"ability_storm_spirit_ball_lightning"
+	}
 }

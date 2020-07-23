@@ -124,6 +124,11 @@
 #base "heroes/slardar/bash.txt"
 #base "heroes/slardar/amplify_damage.txt"
 
+#base "heroes/storm_spirit/static_remnant.txt"
+#base "heroes/storm_spirit/electric_vortex.txt"
+#base "heroes/storm_spirit/overload.txt"
+#base "heroes/storm_spirit/ball_lightning.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
