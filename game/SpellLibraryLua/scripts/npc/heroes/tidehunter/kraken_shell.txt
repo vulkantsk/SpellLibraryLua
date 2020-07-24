@@ -1,0 +1,36 @@
+""
+{
+    "ability_tidehunter_kraken_shell"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/tidehunter/kraken_shell.lua"
+        "AbilityTextureName"            "tidehunter_kraken_shell"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "damage_reduction"      "14 26 38 50"
+                "LinkedSpecialBonus"    "special_bonus_unique_tidehunter_4"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "damage_cleanse"        "600 550 500 450"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "damage_reset_interval" "6.0 6.0 6.0 6.0"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}

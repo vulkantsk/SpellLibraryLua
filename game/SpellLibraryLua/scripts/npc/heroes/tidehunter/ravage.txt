@@ -1,0 +1,54 @@
+""
+{
+    "ability_tidehunter_ravage"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/tidehunter/ravage.lua"
+        "AbilityTextureName"            "tidehunter_ravage"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES_STRONG"
+        "FightRecapLevel"               "2"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "0"
+        "AbilityCastPoint"              "0.3 0.3 0.3"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+        
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "150.0 150.0 150.0"
+
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                 "200 300 400"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "150 225 325"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "radius"            "1250"
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "speed"             "725"
+            }
+            "03"
+            {   
+                "var_type"          "FIELD_FLOAT"
+                "duration"          "2.4 2.6 2.8"
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+""
+{
+    "ability_nyx_assassin_vendetta"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/nyx_assassin/vendetta.lua"
+        "AbilityTextureName"            "nyx_assassin_vendetta"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "FightRecapLevel"               "2"
+        "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_6"
+
+        "HasScepterUpgrade"         "1"
+        "AbilityDraftUltScepterAbility"     "nyx_assassin_burrow"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "90.0 70.0 50.0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "140 200 260"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "40 50 60"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "fade_time"             "0.0"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "movement_speed"        "16 18 20"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_damage"          "250 375 500"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "cooldown_scepter"      "70 60 50"
+            }
+            "06"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "health_regen_rate_scepter"     "3"
+            }
+            "07"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "mana_regen_rate_scepter"       "3"
+            }
+            "08"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "break_duration"        "4.0"
+            }
+        }
+    }
+}

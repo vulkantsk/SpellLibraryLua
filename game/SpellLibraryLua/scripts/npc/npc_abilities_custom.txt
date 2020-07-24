@@ -129,6 +129,16 @@
 #base "heroes/storm_spirit/overload.txt"
 #base "heroes/storm_spirit/ball_lightning.txt"
 
+#base "heroes/nyx_assassin/impale.txt"
+#base "heroes/nyx_assassin/mana_burn.txt"
+#base "heroes/nyx_assassin/spiked_carapace.txt"
+#base "heroes/nyx_assassin/vendetta.txt"
+
+#base "heroes/tidehunter/gush.txt"
+#base "heroes/tidehunter/kraken_shell.txt"
+#base "heroes/tidehunter/anchor_smash.txt"
+#base "heroes/tidehunter/ravage.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
