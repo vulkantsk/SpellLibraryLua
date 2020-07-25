@@ -32,4 +32,5 @@
 	"npc_dota_hero_storm_spirit"		"1"
 	"npc_dota_hero_nyx_assassin"		"1"
 	"npc_dota_hero_tidehunter"			"1"
+	"npc_dota_hero_viper"				"1"
 }

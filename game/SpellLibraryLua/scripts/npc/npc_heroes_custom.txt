@@ -223,6 +223,7 @@
 		"Ability3"		"ability_storm_spirit_overload"
 		"Ability6"		"ability_storm_spirit_ball_lightning"
 	}
+	
 	"npc_dota_hero_nyx_assassin"
     {
         "Ability1"      "ability_nyx_assassin_impale"
@@ -232,6 +233,7 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_nyx_assassin_vendetta"
     }
+
     "npc_dota_hero_tidehunter"
     {
         "Ability1"      "ability_tidehunter_gush"
@@ -240,5 +242,15 @@
         "Ability4"      "generic_hidden"
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_tidehunter_ravage"
+    }
+
+    "npc_dota_hero_viper"
+    {
+        "Ability1"      "ability_viper_poison_attack"
+        "Ability2"      "ability_viper_nethertoxin"
+        "Ability3"      "ability_viper_corrosive_skin"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_viper_viper_strike"
     }
 }

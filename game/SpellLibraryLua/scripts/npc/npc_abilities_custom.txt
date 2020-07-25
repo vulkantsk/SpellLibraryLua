@@ -139,6 +139,11 @@
 #base "heroes/tidehunter/anchor_smash.txt"
 #base "heroes/tidehunter/ravage.txt"
 
+#base "heroes/viper/poison_attack.txt"
+#base "heroes/viper/nethertoxin.txt"
+#base "heroes/viper/corrosive_skin.txt"
+#base "heroes/viper/viper_strike.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"
