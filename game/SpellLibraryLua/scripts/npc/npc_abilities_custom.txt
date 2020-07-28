@@ -144,6 +144,16 @@
 #base "heroes/viper/corrosive_skin.txt"
 #base "heroes/viper/viper_strike.txt"
 
+#base "heroes/omniknight/purification.txt"
+#base "heroes/omniknight/repel.txt"
+#base "heroes/omniknight/degen_aura.txt"
+#base "heroes/omniknight/guardian_angel.txt"
+
+#base "heroes/drow_ranger/frost_arrows.txt"
+#base "heroes/drow_ranger/wave_of_silence.txt"
+#base "heroes/drow_ranger/multishot.txt"
+#base "heroes/drow_ranger/marksmanship.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

@@ -1,0 +1,65 @@
+""
+{
+    "ability_drow_ranger_wave_of_silence"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/drow_ranger/wave_of_silence.lua"
+        "AbilityTextureName"            "drow_ranger_wave_of_silence"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+        "AbilitySound"                  "Hero_DrowRanger.Silence"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "900"
+        "AbilityCastPoint"              "0.25"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "16 15 14 13"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "90"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "wave_speed"        "2000.0"
+            }
+            "02"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "wave_width"        "250"
+            }
+            "03"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "silence_duration"  "3 4 5 6"
+                "LinkedSpecialBonus"    "special_bonus_unique_drow_ranger_4"
+            }
+            "04"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "knockback_distance_max"    "450"
+            }
+            "05"
+            {
+                "var_type"          "FIELD_FLOAT"
+                "knockback_duration"        "0.6 0.7 0.8 0.9"
+            }
+            "06"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "knockback_height"      "0"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}

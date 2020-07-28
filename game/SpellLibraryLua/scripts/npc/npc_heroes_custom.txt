@@ -253,4 +253,24 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_viper_viper_strike"
     }
+
+    "npc_dota_hero_omniknight"
+    {
+        "Ability1"      "ability_omniknight_purification"
+        "Ability2"      "ability_omniknight_repel"
+        "Ability3"      "ability_omniknight_degen_aura"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_omniknight_guardian_angel"
+    }
+
+    "npc_dota_hero_drow_ranger"
+    {
+        "Ability1"      "ability_drow_ranger_frost_arrows"
+        "Ability2"      "ability_drow_ranger_wave_of_silence"
+        "Ability3"      "ability_drow_ranger_multishot"
+        "Ability4"      "generic_hidden"
+        "Ability5"      "generic_hidden"
+        "Ability6"      "ability_drow_ranger_marksmanship"
+    }
 }

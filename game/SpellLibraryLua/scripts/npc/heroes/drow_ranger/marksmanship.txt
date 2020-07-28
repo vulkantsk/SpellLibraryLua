@@ -1,0 +1,68 @@
+""
+{
+    "ability_drow_ranger_marksmanship"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/drow_ranger/marksmanship.lua"
+        "AbilityTextureName"            "drow_ranger_marksmanship"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityCastRange"              "400"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"  
+        "HasScepterUpgrade"         "1"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "chance"    "20 30 40"
+                "LinkedSpecialBonus"        "special_bonus_unique_drow_ranger_3"
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "bonus_damage"  "70 80 90"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+            "03"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "agility_multiplier"        "28 36 44"
+            }
+            "04"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "agility_range"     "1200"
+            }
+            "05"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "split_count_scepter"           "2"
+                "RequiresScepter"       "1"
+            }
+            "06"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "scepter_range"                 "375"
+                "RequiresScepter"       "1"
+            }
+            "07"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "damage_reduction_scepter"      "50"
+                "RequiresScepter"       "1"
+                "CalculateSpellDamageTooltip"   "0"
+            }
+            "08"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "disable_range"     "400"
+            }
+        }
+    }
+}

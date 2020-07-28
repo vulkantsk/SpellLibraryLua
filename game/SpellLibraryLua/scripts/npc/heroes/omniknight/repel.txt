@@ -1,0 +1,61 @@
+""
+{
+    "ability_omniknight_repel"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/omniknight/repel.lua"
+        "AbilityTextureName"            "omniknight_repel"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "FightRecapLevel"               "1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "500"
+        "AbilityCastPoint"              "0.25"
+        
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "26 22 18 14"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "80 90 100 110"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportValue"   "3.0"   // Value much higher than cost.
+
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "duration"              "12"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "status_resistance"     "50"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "bonus_str"     "7 14 21 28"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "hp_regen"      "8 12 16 20"
+                "LinkedSpecialBonus"    "special_bonus_unique_omniknight_5"
+            }
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+    }
+}
