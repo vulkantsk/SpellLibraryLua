@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"ability_dark_rift"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/abyssal_underlord/ability_dark_rift"
+		"AbilityTextureName"			"abyssal_underlord_dark_rift"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.6"
+
+		"AbilityCooldown"				"130 115 100"
+		"AbilityManaCost"				"100 200 300"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"teleport_delay"				"6.0 5.0 4.0"
+			}
+		}
+	}
+
+	"ability_cancel_dark_rift"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/abyssal_underlord/ability_dark_rift"
+		"AbilityTextureName"			"abyssal_underlord_cancel_dark_rift"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+
+		"AbilityType"						"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_4"
+		"AbilityCastGestureSlot"		"DEFAULT"
+	}
+}

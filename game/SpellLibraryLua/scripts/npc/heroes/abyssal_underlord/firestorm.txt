@@ -1,0 +1,77 @@
+"DOTAAbilities"
+{
+	"ability_firestorm"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/abyssal_underlord/firestorm"
+		"AbilityTextureName"			"abyssal_underlord_firestorm"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"750"
+		"AbilityCastPoint"				"0.6"
+
+		"AbilityCooldown"				"12.0"
+		"AbilityManaCost"				"100 110 120 130"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"wave_duration"					"7.0"
+			}		
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"wave_count"					"6"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"wave_damage"					"25 40 55 70"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"wave_interval"					"1.0"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"burn_damage"					"1 2 3 4"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"burn_interval"					"1.0"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"burn_duration"					"2.0"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"first_wave_delay"				"0.0"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"building_damage"				"33"
+			}
+		}
+	}
+}

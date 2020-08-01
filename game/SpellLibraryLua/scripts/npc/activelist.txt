@@ -6,6 +6,7 @@
 "CustomHeroList"
 {
 	"npc_dota_hero_abaddon"				"1"
+	"npc_dota_hero_abyssal_underlord"	"1"
 	"npc_dota_hero_alchemist"			"1"
 	"npc_dota_hero_axe"					"1"
 	"npc_dota_hero_brewmaster"			"1"

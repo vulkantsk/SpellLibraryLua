@@ -1,3 +1,8 @@
+#base "heroes/abyssal_underlord/firestorm.txt"
+#base "heroes/abyssal_underlord/pit_of_malice.txt"
+#base "heroes/abyssal_underlord/atrophy_aura.txt"
+#base "heroes/abyssal_underlord/dark_rift.txt"
+
 #base "heroes/spectre/spectral_dagger.txt"
 #base "heroes/spectre/desolate.txt"
 #base "heroes/spectre/dispersion.txt"

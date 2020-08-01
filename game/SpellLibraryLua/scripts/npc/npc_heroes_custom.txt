@@ -12,6 +12,14 @@
 		"Ability6"	"ability_borrowed_time"
 	}
 
+	"npc_dota_hero_abyssal_underlord"
+	{
+		"Ability1"	"ability_firestorm"
+		"Ability2"	"ability_pit_of_malice"
+		"Ability3"	"ability_atrophy_aura"
+		"Ability3"	"ability_dark_rift"
+	}
+
 	"npc_dota_hero_alchemist"
 	{
 		"Ability1"		"ability_acid_spray"

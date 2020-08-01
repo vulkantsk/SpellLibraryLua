@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"ability_pit_of_malice"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/abyssal_underlord/pit_of_malice"
+		"AbilityTextureName"			"abyssal_underlord_pit_of_malice"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"750"
+		"AbilityCastPoint"				"0.45"
+
+		"AbilityCooldown"				"30 26 22 18"
+		"AbilityManaCost"				"100 115 130 145"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"400"
+				"LinkedSpecialBonus"			"special_bonus_unique_underlord_6"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pit_duration"					"12.0"
+			}		
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pit_interval"					"3.6"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"pit_damage"					"0"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"ensnare_duration"				"0.9 1.2 1.5 1.8"
+				"LinkedSpecialBonus"			"special_bonus_unique_underlord"
+			}
+		}
+	}
+}
