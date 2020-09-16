@@ -5,6 +5,7 @@
 
 "CustomHeroList"
 {
+	"npc_dota_hero_dragon_knight"		"1"
 	"npc_dota_hero_doom_bringer"		"1"
 	"npc_dota_hero_dark_seer"			"1"
 	"npc_dota_hero_abaddon"				"1"

@@ -3,6 +3,14 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {	
+	"npc_dota_hero_dragon_knight"
+	{
+		"Ability1"	"ability_breathe_fire"
+		"Ability2"	"ability_dragon_tail"
+		"Ability3"	"ability_dragon_blood"
+		"Ability6"	"ability_elder_dragon_form"
+	}
+
 	"npc_dota_hero_doom_bringer"
 	{
 		"Ability1"	"ability_devour"

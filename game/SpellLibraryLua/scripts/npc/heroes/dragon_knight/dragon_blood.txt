@@ -1,0 +1,32 @@
+"DOTAAbilities"
+{
+	"ability_dragon_blood"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/dragon_knight/dragon_blood"
+		"AbilityTextureName"			"dragon_knight_dragon_blood"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_health_regen"			"4 8 12 16"
+				"LinkedSpecialBonus"			"special_bonus_unique_dragon_knight"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_armor"					"3 6 9 12"
+				"LinkedSpecialBonus"			"special_bonus_unique_dragon_knight"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+			}
+		}
+	}
+}

@@ -1,3 +1,8 @@
+#base "heroes/dragon_knight/breathe_fire.txt"
+#base "heroes/dragon_knight/dragon_tail.txt"
+#base "heroes/dragon_knight/dragon_blood.txt"
+#base "heroes/dragon_knight/elder_dragon_form.txt"
+
 #base "heroes/doom_bringer/devour.txt"
 #base "heroes/doom_bringer/scorched_earth.txt"
 #base "heroes/doom_bringer/infernal_blade.txt"
