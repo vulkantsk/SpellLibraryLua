@@ -1,3 +1,8 @@
+#base "heroes/doom_bringer/devour.txt"
+#base "heroes/doom_bringer/scorched_earth.txt"
+#base "heroes/doom_bringer/infernal_blade.txt"
+#base "heroes/doom_bringer/doom.txt"
+
 #base "heroes/dark_seer/vacuum.txt"
 #base "heroes/dark_seer/ion_shell.txt"
 #base "heroes/dark_seer/surge.txt"

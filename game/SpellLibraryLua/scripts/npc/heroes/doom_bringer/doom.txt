@@ -1,0 +1,47 @@
+"DOTAAbilities"
+{
+	"ability_doom"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/doom_bringer/doom"
+		"AbilityTextureName"			"doom_bringer_doom"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastRange"				"550 550 550"
+		"AbilityCastPoint"				"0.5"
+
+		"AbilityCooldown"				"145.0"
+		"AbilityManaCost"				"150 200 250"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"16.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_7"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"25 40 55"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_5"				
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"deniable_pct"			"25 25 25"
+			}
+		}
+	}
+}

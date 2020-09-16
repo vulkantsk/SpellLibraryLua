@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+	"ability_infernal_blade"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/doom_bringer/infernal_blade"
+		"AbilityTextureName"			"doom_bringer_infernal_blade"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"175"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		"AbilityCooldown"				"16 12 8 4"
+		"AbilityManaCost"				"40"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"burn_damage"			"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"burn_damage_pct"		"1.25 2.5 3.75 5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"burn_duration"			"4.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ministun_duration"	"0.6"
+			}
+		}
+	}
+}

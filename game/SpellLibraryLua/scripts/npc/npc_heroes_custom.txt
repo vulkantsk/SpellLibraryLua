@@ -2,7 +2,15 @@
 // NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
-{
+{	
+	"npc_dota_hero_doom_bringer"
+	{
+		"Ability1"	"ability_devour"
+		"Ability2"	"ability_scorched_earth"
+		"Ability3"	"ability_infernal_blade"
+		"Ability6"	"ability_doom"
+	}
+
 	"npc_dota_hero_dark_seer"
 	{
 		"Ability1"	"ability_vacuum"

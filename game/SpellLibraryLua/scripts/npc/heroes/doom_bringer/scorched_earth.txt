@@ -1,0 +1,48 @@
+"DOTAAbilities"
+{
+	"ability_scorched_earth"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/doom_bringer/scorched_earth"
+		"AbilityTextureName"			"doom_bringer_scorched_earth"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"600 600 600 600"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"50 45 40 35"
+		"AbilityManaCost"				"60 65 70 75"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_per_second"		"20 30 40 50"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_4"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"600 600 600 600"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed_pct"	"11 12 13 14"
+				"LinkedSpecialBonus"	"special_bonus_unique_doom_6"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"10.0 12.0 14.0 16.0"
+			}
+		}
+	}
+}
