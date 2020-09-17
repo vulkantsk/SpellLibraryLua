@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"ability_enchant"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/enchantress/enchant"
+		"AbilityTextureName"			"enchantress_enchant"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+		"AbilityDuration"				"3.75 4.5 5.25 6"
+
+		"AbilityCooldown"				"55 40 25 10"
+		"AbilityManaCost"				"65 65 65 65"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"dominate_duration"		"30 60 90 120"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"enchant_health"	"200 300 400 500"
+			}	
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"enchant_armor"			"2 4 6 8"
+			}	
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"enchant_damage"	"10 30 50 70"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_movement_speed"	"-55"
+			}	
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+}

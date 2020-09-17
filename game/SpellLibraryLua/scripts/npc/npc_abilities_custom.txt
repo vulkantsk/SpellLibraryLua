@@ -1,3 +1,8 @@
+#base "heroes/enchantress/impetus.txt"
+#base "heroes/enchantress/enchant.txt"
+#base "heroes/enchantress/natures_attendants.txt"
+#base "heroes/enchantress/untouchable.txt"
+
 #base "heroes/dragon_knight/breathe_fire.txt"
 #base "heroes/dragon_knight/dragon_tail.txt"
 #base "heroes/dragon_knight/dragon_blood.txt"
