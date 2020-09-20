@@ -1,0 +1,31 @@
+"DOTAAbilities"
+{
+    "ability_mana_shield"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/medusa/mana_shield"
+        "AbilityTextureName"            "medusa_mana_shield"
+        "FightRecapLevel"               "1"
+        "MaxLevel"                      "4"
+
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"      
+
+        "AbilityCastPoint"              "0.4 0.4 0.4 0.4"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "damage_per_mana"       "1.6 1.9 2.2 2.5"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "absorption_tooltip"        "60"
+            }
+        }
+    }
+}

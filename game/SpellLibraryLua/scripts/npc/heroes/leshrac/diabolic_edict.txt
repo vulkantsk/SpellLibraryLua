@@ -1,0 +1,51 @@
+"DOTAAbilities"
+{
+	"ability_diabolic_edict"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/leshrac/diabolic_edict"
+		"AbilityTextureName"			"leshrac_diabolic_edict"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastPoint"				"0.5"
+		"AbilityCastRange"				"500"
+		"AbilityDuration"				"10"
+
+		"AbilityCooldown"				"22 22 22 22"
+		"AbilityManaCost"				"95 120 135 155"
+		"AbilityDamage"					"11 22 33 44"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"num_explosions"		"40"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tower_bonus"			"40"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration_tooltip"			"10"
+			}
+		}
+	}
+}

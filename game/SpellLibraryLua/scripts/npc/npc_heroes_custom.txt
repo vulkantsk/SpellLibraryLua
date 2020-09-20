@@ -3,6 +3,30 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {	
+	"npc_dota_hero_medusa"
+	{
+		"Ability1"	"ability_split_shot"
+		"Ability2"	"ability_mystic_snake"
+		"Ability3"	"ability_mana_shield"
+		"Ability6"	"ability_stone_gaze"
+	}
+
+	"npc_dota_hero_leshrac"
+	{
+		"Ability1"	"ability_split_earth"
+		"Ability2"	"ability_diabolic_edict"
+		"Ability3"	"ability_lightning_storm"
+		"Ability6"	"ability_pulse_nova"
+	}
+
+	"npc_dota_hero_enigma"
+	{
+		"Ability1"	"ability_malefice"
+		"Ability2"	"ability_demonic_conversion"
+		"Ability3"	"ability_midnight_pulse"
+		"Ability6"	"ability_black_hole"
+	}
+
 	"npc_dota_hero_enchantress"
 	{
 		"Ability1"	"ability_impetus"

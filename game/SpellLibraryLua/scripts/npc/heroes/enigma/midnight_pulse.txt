@@ -1,0 +1,41 @@
+"DOTAAbilities"
+{
+	"ability_midnight_pulse"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/enigma/midnight_pulse"
+		"AbilityTextureName"			"enigma_midnight_pulse"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.1"
+
+		"AbilityCooldown"				"50 45 40 35"
+		"AbilityManaCost"				"75 95 115 135"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"550"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_percent"			"3.75 4.25 4.75 5.25"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"9 10 11 12"
+			}
+		}
+	}
+}

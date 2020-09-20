@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"ability_malefice"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/enigma/malefice"
+		"AbilityTextureName"			"enigma_malefice"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+	
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilityCooldown"				"18 17 16 15"
+		"AbilityManaCost"				"100 120 140 160"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_rate"				"2.0 2.0 2.0 2.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"0.4 0.6 0.8 1.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"30 50 70 90"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0 4.0 4.0 4.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_stuns"			"3 3 3 3"
+			}
+		}
+	}
+}

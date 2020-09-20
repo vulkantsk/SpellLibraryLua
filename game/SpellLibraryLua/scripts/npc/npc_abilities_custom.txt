@@ -1,3 +1,18 @@
+#base "heroes/medusa/split_shot.txt"
+#base "heroes/medusa/mystic_snake.txt"
+#base "heroes/medusa/mana_shield.txt"
+#base "heroes/medusa/stone_gaze.txt"
+
+#base "heroes/leshrac/split_earth.txt"
+#base "heroes/leshrac/diabolic_edict.txt"
+#base "heroes/leshrac/lightning_storm.txt"
+#base "heroes/leshrac/pulse_nova.txt"
+
+#base "heroes/enigma/malefice.txt"
+#base "heroes/enigma/demonic_conversion.txt"
+#base "heroes/enigma/midnight_pulse.txt"
+#base "heroes/enigma/black_hole.txt"
+
 #base "heroes/enchantress/impetus.txt"
 #base "heroes/enchantress/enchant.txt"
 #base "heroes/enchantress/natures_attendants.txt"
