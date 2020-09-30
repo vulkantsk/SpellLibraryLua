@@ -1,0 +1,72 @@
+"DOTAAbilities"
+{
+	"ability_march_of_the_machines"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tinker/march_of_the_machines"
+		"AbilityTextureName"			"tinker_march_of_the_machines"
+		"FightRecapLevel"				"1"
+		"HasScepterUpgrade"				"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"300"
+		"AbilityCastPoint"				"0.53"
+
+		"AbilityCooldown"				"35.0"
+		"AbilityManaCost"				"145 150 165 190"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"collision_radius"		"50 50 50 50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"splash_radius"			"150 150 150 150"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"6.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker_5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"400 400 400 400"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"machines_per_sec"		"24"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance"				"1800"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance_scepter"		"1800"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"16 24 32 40"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker_2"
+			}
+		}
+	}
+}

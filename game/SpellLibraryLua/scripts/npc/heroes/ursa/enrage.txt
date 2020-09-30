@@ -1,0 +1,52 @@
+"DOTAAbilities"
+{
+	"ability_enrage"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ursa/enrage"
+		"AbilityTextureName"			"ursa_enrage"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"HasScepterUpgrade"				"1"
+
+		"AbilityCastRange"				"0"
+		"AbilityCooldown"				"70 50 30"
+		"AbilityManaCost"				"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"enrage_multiplier"			"1.5 1.75 2.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_reduction"			"80"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_ursa_3"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"cooldown_scepter"			"30 24 18"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_resistance"			"50"
+			}
+		}
+	}
+}

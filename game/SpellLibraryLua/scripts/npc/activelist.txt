@@ -5,6 +5,9 @@
 
 "CustomHeroList"
 {
+	"npc_dota_hero_tinker"				"1"
+	"npc_dota_hero_ursa"				"1"
+	"npc_dota_hero_skeleton_king"		"1"
 	"npc_dota_hero_medusa"				"1"
 	"npc_dota_hero_leshrac"				"1"
 	"npc_dota_hero_enigma"				"1"

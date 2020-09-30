@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+	"ability_hellfire_blast"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/skeleton_king/hellfire_blast"
+		"AbilityTextureName"			"skeleton_king_hellfire_blast"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_SkeletonKing.Hellfire_Blast"
+
+		"AbilityCastRange"				"525"
+		"AbilityCastPoint"				"0.35 0.35 0.35 0.35"
+		"AbilityCooldown"				"14 12 10 8"
+		"AbilityDamage"					"70 80 90 100"
+		"AbilityManaCost"				"95 110 125 140"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_speed"			"1000"
+			}			
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_stun_duration"	"1.1 1.4 1.7 2.0"
+	
+			}			
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_dot_duration"	"2.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_7"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_slow"			"-20"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_dot_damage"		"10 30 50 70"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_3"
+			}			
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+}

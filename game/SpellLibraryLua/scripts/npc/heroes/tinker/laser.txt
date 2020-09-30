@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+	"ability_laser"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tinker/laser"
+		"AbilityTextureName"			"tinker_laser"
+		"FightRecapLevel"				"1"
+		"HasScepterUpgrade"				"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"650"
+		"AbilityCastPoint"				"0.4"
+
+		"AbilityCooldown"				"20 18 16 14"
+		"AbilityManaCost"				"110 130 150 170"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"miss_rate"				"100 100 100 100"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration_hero"			"3 3.5 4 4.5"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker_4"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration_creep"		"6.0 6.0 6.0 6.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker_4"
+			}	
+			"04"	
+			{
+				"var_type"				"FIELD_INTEGER"
+				"laser_damage"			"80 160 240 320"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker"
+			}	
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"scepter_bounce_range"	"400"
+				"RequiresScepter"			"1"
+			}
+		}
+	}
+}

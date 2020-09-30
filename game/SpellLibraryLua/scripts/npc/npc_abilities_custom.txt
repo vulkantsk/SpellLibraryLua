@@ -1,3 +1,18 @@
+#base "heroes/tinker/laser.txt"
+#base "heroes/tinker/heat_seeking_missile.txt"
+#base "heroes/tinker/march_of_the_machines.txt"
+#base "heroes/tinker/rearm.txt"
+
+#base "heroes/ursa/earthshock.txt"
+#base "heroes/ursa/overpower.txt"
+#base "heroes/ursa/fury_swipes.txt"
+#base "heroes/ursa/enrage.txt"
+
+#base "heroes/skeleton_king/hellfire_blast.txt"
+#base "heroes/skeleton_king/vampiric_aura.txt"
+#base "heroes/skeleton_king/mortal_strike.txt"
+#base "heroes/skeleton_king/reincarnation.txt"
+
 #base "heroes/medusa/split_shot.txt"
 #base "heroes/medusa/mystic_snake.txt"
 #base "heroes/medusa/mana_shield.txt"

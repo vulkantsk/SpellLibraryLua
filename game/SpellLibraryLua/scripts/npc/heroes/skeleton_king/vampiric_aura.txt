@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+	"ability_vampiric_aura"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/skeleton_king/vampiric_aura"
+		"AbilityTextureName"			"skeleton_king_vampiric_aura"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura_radius"	"1200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura"			"8 16 24 32"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura_ranged_pct"			"50"
+			}
+		}
+	}
+}

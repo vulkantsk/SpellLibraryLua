@@ -1,0 +1,58 @@
+"DOTAAbilities"
+{
+	"ability_mortal_strike"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/skeleton_king/mortal_strike"
+		"AbilityTextureName"			"skeleton_king_mortal_strike"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+
+		"AbilityCastPoint"				"0.1"
+
+		"AbilityCooldown"				"50"
+		"AbilityManaCost"				"50 60 70 80"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_mult"					"300"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_chance"				"9 11 13 15"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"skeleton_duration"			"90"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_skeleton_charges"		"4 5 6 7"
+				"LinkedSpecialBonus"	"special_bonus_unique_wraith_king_5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spawn_interval"			"0.25"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"gold_bounty"						"5"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"xp_bounty"						"5"
+			}
+		}
+	}
+}
