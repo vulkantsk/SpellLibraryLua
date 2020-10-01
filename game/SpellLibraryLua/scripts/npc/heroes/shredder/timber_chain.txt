@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+	"ability_timber_chain"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/shredder/timber_chain"
+		"AbilityTextureName"			"shredder_timber_chain"
+		"FightRecapLevel"				"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		"AbilityCastRange"				"850 1050 1250 1450"
+		"AbilityCooldown"				"4"
+		"AbilityManaCost"				"60 70 80 90"
+		"AbilityDamage"					"100 200 300 400"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chain_radius"		"90 90 90 90"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"range"				"850 1050 1250 1450"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"		"225 225 225 225"
+			}
+			"04"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"speed"				"1600 2000 2400 2800"
+			}
+			"05"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"100 140 180 220"
+			}
+		}
+	}
+}

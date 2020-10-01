@@ -1,0 +1,46 @@
+"DOTAAbilities"
+{
+	"ability_conjure_image"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/terrorblade/conjure_image"
+		"AbilityTextureName"			"terrorblade_conjure_image"
+		"FightRecapLevel"				"1"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"16"
+		"AbilityManaCost"				"70 75 80 85"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_duration"					"34.0"
+				"LinkedSpecialBonus"	"special_bonus_unique_terrorblade_5"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_outgoing_damage"			"-70 -60 -50 -40"		 
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_outgoing_tooltip"			"30 40 50 60"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_incoming_damage"			"220.0"
+			}
+			"05"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"illusion_incoming_damage_total_tooltip"			"320.0"
+			}
+		}
+	}
+}

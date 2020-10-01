@@ -1,3 +1,16 @@
+#base "heroes/terrorblade/reflection.txt"
+#base "heroes/terrorblade/conjure_image.txt"
+#base "heroes/terrorblade/metamorphosis.txt"
+#base "heroes/terrorblade/sunder.txt"
+
+#base "heroes/shredder/whirling_death.txt"
+#base "heroes/shredder/timber_chain.txt"
+#base "heroes/shredder/reactive_armor.txt"
+#base "heroes/shredder/chakram_2.txt"
+#base "heroes/shredder/chakram.txt"
+#base "heroes/shredder/return_chakram.txt"
+#base "heroes/shredder/return_chakram_2.txt"
+
 #base "heroes/tinker/laser.txt"
 #base "heroes/tinker/heat_seeking_missile.txt"
 #base "heroes/tinker/march_of_the_machines.txt"

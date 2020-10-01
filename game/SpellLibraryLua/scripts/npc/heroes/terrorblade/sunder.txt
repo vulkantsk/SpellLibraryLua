@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+	"ability_sunder"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/terrorblade/sunder"
+		"AbilityTextureName"			"terrorblade_sunder"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"475"
+		"AbilityCastPoint"				"0.35"
+
+		"AbilityCooldown"				"120.0 80.0 40.0"
+		"AbilityManaCost"				"200 100 50"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hit_point_minimum_pct"		"35 30 25"
+			}
+		}
+	}
+}
