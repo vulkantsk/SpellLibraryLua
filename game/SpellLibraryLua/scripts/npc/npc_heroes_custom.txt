@@ -379,4 +379,12 @@
         "Ability5"      "generic_hidden"
         "Ability6"      "ability_drow_ranger_marksmanship"
     }
+
+	"npc_dota_hero_weaver"
+	{
+		"Ability1"	"ability_the_swarm"
+		//"Ability2"	"ability_conjure_image"
+		//"Ability3"	"ability_metamorphosis"
+		//"Ability6"	"ability_sunder"
+	}
 }

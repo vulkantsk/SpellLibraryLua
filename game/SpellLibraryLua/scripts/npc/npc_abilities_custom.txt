@@ -222,6 +222,8 @@
 #base "heroes/drow_ranger/multishot.txt"
 #base "heroes/drow_ranger/marksmanship.txt"
 
+#base "heroes/weaver/the_swarm.txt"
+
 "DOTAAbilities"
 {
 	"Version"		"1"

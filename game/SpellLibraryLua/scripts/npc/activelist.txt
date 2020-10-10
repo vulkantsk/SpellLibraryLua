@@ -48,4 +48,5 @@
 	"npc_dota_hero_viper"				"1"
 	"npc_dota_hero_omniknight"			"1"
 	"npc_dota_hero_drow_ranger"			"1"
+	"npc_dota_hero_weaver"			    "1"
 }
