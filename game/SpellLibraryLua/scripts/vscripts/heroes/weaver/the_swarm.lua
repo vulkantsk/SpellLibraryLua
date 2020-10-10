@@ -1,5 +1,5 @@
-LinkLuaModifier("modifier_imba_weaver_the_swarm_unit", "heroes/weaver/the_swarm", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_imba_weaver_the_swarm_debuff", "heroes/weaver/the_swarm", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_the_swarm_unit", "heroes/weaver/the_swarm", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_the_swarm_debuff", "heroes/weaver/the_swarm", LUA_MODIFIER_MOTION_NONE)
 
 ability_the_swarm = class({})
 
@@ -72,6 +72,9 @@ function ability_the_swarm:OnSpellStart()
 end
 
 function ability_the_swarm:OnProjectileThink_ExtraData(location, data)
+    if (not IsServer()) then
+        return
+    end
     local thinker = EntIndexToHScript(data.thinker_index)
     if (thinker and not thinker:IsNull()) then
         thinker:SetAbsOrigin(location)
@@ -104,7 +107,9 @@ function ability_the_swarm:OnProjectileHit_ExtraData(target, location, data)
                 }
         )
         beetle:SetForwardVector((target_position - beetle:GetAbsOrigin()):Normalized())
-        ProjectileManager:DestroyLinearProjectile(thinker.projectile_id)
+        if (thinker.projectile_id) then
+            ProjectileManager:DestroyLinearProjectile(thinker.projectile_id)
+        end
     end
     if (thinker_alive) then
         thinker:StopSound("Hero_Weaver.Swarm.Projectile")
@@ -118,9 +123,6 @@ modifier_the_swarm_unit = class({
     end,
     IsPurgable = function()
         return false
-    end,
-    GetEffectName = function()
-        return "particles/units/heroes/hero_weaver/weaver_swarm_debuff.vpcf"
     end,
     DeclareFunctions = function()
         return
@@ -173,7 +175,7 @@ function modifier_the_swarm_unit:OnIntervalThink()
         elseif self.target:IsAlive() then
             local target_position = self.target:GetAbsOrigin()
             self.beetle:SetAbsOrigin(target_position + self.target:GetForwardVector() * 64)
-            self.beetle:SetForwardVector((target_position - self.beetle):Normalized())
+            self.beetle:SetForwardVector((target_position - self.beetle:GetAbsOrigin()):Normalized())
         end
     end
 end
@@ -234,7 +236,7 @@ function modifier_the_swarm_debuff:OnCreated(params)
     self.target = self:GetParent()
     self.ability = self:GetAbility()
     self:OnIntervalThink()
-    self:StartIntervalThink(self.attack_rate)
+    self:StartIntervalThink(self.ability.attack_rate)
 end
 
 function modifier_the_swarm_debuff:OnIntervalThink()
@@ -259,5 +261,5 @@ function modifier_the_swarm_debuff:OnDestroy()
 end
 
 function modifier_the_swarm_debuff:GetModifierPhysicalArmorBonus()
-    return self.armor_reduction * self:GetStackCount() * (-1)
+    return self.ability.armor_reduction * self:GetStackCount() * (-1)
 end
