@@ -383,8 +383,8 @@
 	"npc_dota_hero_weaver"
 	{
 		"Ability1"	"ability_the_swarm"
-		//"Ability2"	"ability_conjure_image"
-		//"Ability3"	"ability_metamorphosis"
-		//"Ability6"	"ability_sunder"
+		"Ability2"	"ability_shukuchi"
+		"Ability3"	"ability_geminate_attack"
+		"Ability6"	"ability_time_lapse"
 	}
 }

@@ -1,0 +1,66 @@
+""
+{
+    "ability_shukuchi"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/weaver/shukuchi.lua"
+        "AbilityTextureName"            "weaver_shukuchi"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"              "0"
+        "AbilityCastRange"              "0"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "12 10 8 6"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "70"
+
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"100 125 150 175"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"				    "200 230 260 290"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"175 175 175 175"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_time"				"0.25 0.25 0.25 0.25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0 4.0 4.0 4.0"
+			}
+        }
+
+		"precache"
+		{
+            "particle"  "particles/units/heroes/hero_weaver/weaver_shukuchi.vpcf"
+            "particle"  "particles/units/heroes/hero_weaver/weaver_shukuchi_start.vpcf"
+            "particle"  "particles/units/heroes/hero_weaver/weaver_shukuchi_damage.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
+		}
+    }
+}

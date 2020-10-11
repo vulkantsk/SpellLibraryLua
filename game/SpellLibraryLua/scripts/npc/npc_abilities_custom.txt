@@ -223,6 +223,9 @@
 #base "heroes/drow_ranger/marksmanship.txt"
 
 #base "heroes/weaver/the_swarm.txt"
+#base "heroes/weaver/shukuchi.txt"
+#base "heroes/weaver/geminate_attack.txt"
+#base "heroes/weaver/time_lapse.txt"
 
 "DOTAAbilities"
 {
