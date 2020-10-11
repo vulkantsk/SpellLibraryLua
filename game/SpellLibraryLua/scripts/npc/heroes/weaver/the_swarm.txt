@@ -78,13 +78,19 @@
 				"var_type"			"FIELD_INTEGER"
 				"travel_time"		"5"
 			}
+			"11"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"hero_attack_multiplier"		"2"
+			}
         }
 
 		"precache"
 		{
             "particle"  "particles/units/heroes/hero_weaver/weaver_swarm_projectile.vpcf"
             "particle"  "particles/units/heroes/hero_weaver/weaver_swarm_debuff.vpcf"
-            "soundfile" "game_sounds_heroes/game_sounds_weaver.vsndevts"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
+            "soundfile" "soundevents/voscripts/game_sounds_vo_weaver.vsndevts"
 		}
     }
 }
