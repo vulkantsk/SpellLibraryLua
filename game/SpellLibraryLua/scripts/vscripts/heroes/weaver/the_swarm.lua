@@ -150,7 +150,10 @@ modifier_the_swarm_beetle = class({
     end,
     GetOverrideAnimation = function()
         return ACT_DOTA_IDLE
-    end
+    end,
+    GetAttributes = function()
+        return MODIFIER_ATTRIBUTE_PERMANENT
+    end,
 })
 
 function modifier_the_swarm_beetle:OnCreated(params)
