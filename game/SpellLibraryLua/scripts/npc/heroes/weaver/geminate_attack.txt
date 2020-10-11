@@ -1,0 +1,47 @@
+""
+{
+    "ability_geminate_attack"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/weaver/geminate_attack.lua"
+        "AbilityTextureName"            "weaver_geminate_attack"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"              "0"
+        "AbilityCastRange"              "0"
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_3"
+
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "9.0 7.0 5.0 3.0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "0"
+
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"delay"			"0.25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_attack"			"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"10 25 40 55"
+			}
+        }
+    }
+}
