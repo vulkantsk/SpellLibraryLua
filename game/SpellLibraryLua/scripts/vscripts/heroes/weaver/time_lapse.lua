@@ -41,7 +41,8 @@ modifier_time_lapse = class({
     end,
     DeclareFunctions = function()
         return {
-            MODIFIER_EVENT_ON_RESPAWN
+            MODIFIER_EVENT_ON_RESPAWN,
+            MODIFIER_EVENT_ON_DEATH
         }
     end
 })
@@ -57,7 +58,10 @@ function modifier_time_lapse:OnCreated()
 end
 
 function modifier_time_lapse:OnRefresh()
-    self:OnCreated()
+    if(not IsServer()) then
+        return
+    end
+    self:StartIntervalThink(self.ability:GetSpecialValueFor("return_time"))
 end
 
 function modifier_time_lapse:OnIntervalThink()
@@ -68,9 +72,20 @@ function modifier_time_lapse:OnIntervalThink()
     end
 end
 
-function modifier_time_lapse:OnRespawn()
+function modifier_time_lapse:OnDeath(params)
     if (not IsServer()) then
         return
     end
-    self:StartIntervalThink(self.ability:GetSpecialValueFor("return_time"))
+    if (params.unit == self.caster) then
+        self:StartIntervalThink(-1)
+    end
+end
+
+function modifier_time_lapse:OnRespawn(params)
+    if (not IsServer()) then
+        return
+    end
+    if (params.unit == self.caster) then
+        self:StartIntervalThink(self.ability:GetSpecialValueFor("return_time"))
+    end
 end
