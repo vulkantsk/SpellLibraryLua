@@ -11,7 +11,7 @@ function ability_time_lapse:OnUpgrade()
         return
     end
     if (not self.modifier) then
-        self.modifier = self:GetCaster():FindModifierByName("modifier_time_lapse")
+        self.modifier = self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName())
     end
 end
 
@@ -62,13 +62,9 @@ end
 
 function modifier_time_lapse:OnIntervalThink()
     if (self.caster:IsAlive()) then
-        if (self.deathProtection) then
-            self.deathProtection = nil
-        else
-            self.position = self.caster:GetAbsOrigin()
-            self.health = self.caster:GetHealth()
-            self.mana = self.caster:GetMana()
-        end
+        self.position = self.caster:GetAbsOrigin()
+        self.health = self.caster:GetHealth()
+        self.mana = self.caster:GetMana()
     end
 end
 
@@ -76,5 +72,5 @@ function modifier_time_lapse:OnRespawn()
     if (not IsServer()) then
         return
     end
-    self.deathProtection = true
+    self:StartIntervalThink(self.ability:GetSpecialValueFor("return_time"))
 end
