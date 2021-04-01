@@ -1,0 +1,48 @@
+"DOTAAbilities"
+{
+	"ability_equilibrium"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/obsidian_destroyer/equilibrium"
+		"AbilityTextureName"			"obsidian_destroyer_equilibrium"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCooldown"				"18"
+		"AbilityManaCost"				"50"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mana_steal"		"11 18 25 32"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"mana_steal_active"	"33 54 75 96"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"movement_slow"		"12 22 32 42"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"slow_duration"		"1.75"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"7"
+			}
+		}
+	}
+}

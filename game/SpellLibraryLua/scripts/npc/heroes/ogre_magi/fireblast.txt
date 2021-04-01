@@ -1,0 +1,44 @@
+"DOTAAbilities"
+{
+	"ability_fireblast"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ogre_magi/fireblast"
+		"AbilityTextureName"			"ogre_magi_fireblast"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"475"
+		"AbilityCastPoint"				"0.45"
+		"AbilityCooldown"				"11 10 9 8"
+		"AbilityManaCost"				"75 85 95 105"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"stun_duration"		"1.5"
+			}
+
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"multicast_delay"	"0.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"fireblast_damage"		"60 120 180 240"
+			}
+		}
+	}
+}

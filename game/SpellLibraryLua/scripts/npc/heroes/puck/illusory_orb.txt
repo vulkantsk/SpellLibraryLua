@@ -1,0 +1,65 @@
+""
+{
+	"ability_illusory_orb"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/puck/illusory_orb"
+		"AbilityTextureName"			"puck_illusory_orb"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"1950"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCooldown"				"14 13 12 11"
+		"AbilityManaCost"				"80 100 120 140"
+		"AbilityDamage"					"70 140 210 280"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"225"		
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_distance"				"1950"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"orb_speed"					"651"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"orb_vision"				"450"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"vision_duration"			"3.34 3.34 3.34 3.34"
+			}
+		}
+	}
+
+	"ability_ethereal_jaunt"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/puck/illusory_orb"
+		"AbilityTextureName"			"puck_ethereal_jaunt"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+
+		"AbilityCastPoint"				"0"
+	}
+}

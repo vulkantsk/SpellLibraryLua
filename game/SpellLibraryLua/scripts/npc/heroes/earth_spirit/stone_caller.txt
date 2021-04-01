@@ -1,0 +1,36 @@
+"DOTAAbilities"
+{
+	"ability_stone_caller"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/earth_spirit/stone_caller"
+		"AbilityTextureName"			"earth_spirit_stone_caller"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityCastRange"				"1100"
+		"AbilityCharges"				"7"
+		"AbilityChargeRestoreTime"		"25"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_charges"				"6"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"charge_restore_time"	"30.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"120.0"
+			}
+		}
+	}
+}

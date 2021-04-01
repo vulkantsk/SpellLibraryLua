@@ -1,0 +1,45 @@
+"DOTAAbilities"
+{
+	"ability_sanity_eclipse"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/obsidian_destroyer/sanity_eclipse"
+		"AbilityTextureName"			"obsidian_destroyer_sanity_eclipse"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.25 0.25 0.25"
+		"AbilityCooldown"				"160"
+		"AbilityManaCost"				"175 250 325"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_multiplier"				"8 9 10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_drain"				"40"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"375 475 575"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cast_range"					"700"
+			}
+		}
+	}
+}

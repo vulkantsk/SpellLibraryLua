@@ -2,7 +2,125 @@
 // NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
-{	
+{
+	"npc_dota_hero_silencer"
+	{
+		"Ability1"	"ability_curse_of_the_silent"
+		"Ability2"	"ability_glaives_of_wisdom"
+		"Ability3"	"ability_last_word"
+		"Ability6"	"ability_global_silence"
+	}
+
+	"npc_dota_hero_obsidian_destroyer"
+	{
+		"Ability1"	"ability_arcane_orb"
+		"Ability2"	"ability_astral_imprisonment"
+		"Ability3"	"ability_equilibrium"
+		"Ability6"	"ability_sanity_eclipse"
+	}
+
+	"npc_dota_hero_nevermore"
+	{
+		"Ability1"	"ability_shadowraze1"
+		"Ability2"	"ability_shadowraze2"
+		"Ability3"	"ability_shadowraze3"
+		"Ability4"	"ability_necromastery"
+		"Ability5"	"ability_dark_lord"
+		"Ability6"	"ability_requiem"
+	}
+
+	"npc_dota_hero_sand_king"
+	{
+		"Ability1"	"ability_burrowstrike"
+		"Ability2"	"ability_sand_storm"
+		"Ability3"	"ability_caustic_finale"
+		"Ability6"	"ability_epicenter"
+	}
+
+	"npc_dota_hero_queenofpain"
+	{
+		"Ability1"	"ability_shadow_strike"
+		"Ability2"	"ability_qop_blink"
+		"Ability3"	"ability_scream_of_pain"
+		"Ability6"	"ability_sonic_wave"
+	}
+
+	"npc_dota_hero_ogre_magi"
+	{
+		"Ability1"	"ability_fireblast"
+		"Ability2"	"ability_ignite"
+		"Ability3"	"ability_bloodlust"
+		"Ability4"	"ability_unrefined_fireblast"
+		"Ability6"	"ability_multicast"
+	}
+
+	"npc_dota_hero_naga_siren"
+	{
+		"Ability1"	"ability_mirror_image"
+		"Ability2"	"ability_ensnare"
+		"Ability3"	"ability_rip_tide"
+		"Ability6"	"ability_song_of_the_siren"
+		"Ability7"	"ability_song_of_the_siren_cancel"
+	}
+
+	"npc_dota_hero_magnataur"
+	{
+		"Ability1"	"ability_shockwave"
+		"Ability2"	"ability_empower"
+		"Ability3"	"ability_skewer"
+		"Ability6"	"ability_reverse_polarity"
+	}
+
+	"npc_dota_hero_puck"
+	{
+		"Ability1"	"ability_illusory_orb"
+		"Ability2"	"ability_waning_rift"
+		"Ability3"	"ability_phase_shift"
+		"Ability4"	"ability_ethereal_jaunt"
+		"Ability6"	"ability_dream_coil"
+	}
+
+	"npc_dota_hero_luna"
+	{
+		"Ability1"	"ability_lucent_beam"
+		"Ability2"	"ability_moon_glaive"
+		"Ability3"	"ability_lunar_blessing"
+		"Ability6"	"ability_eclipse"
+	}
+
+	"npc_dota_hero_jakiro"
+	{
+		"Ability1"	"ability_dual_breath"
+		"Ability2"	"ability_ice_path"
+		"Ability3"	"ability_liquid_fire"
+		"Ability6"	"ability_macropyre"
+	}
+
+	"npc_dota_hero_slark"
+	{
+		"Ability1"	"ability_dark_pact"
+		"Ability2"	"ability_pounce"
+		"Ability3"	"ability_essence_shift"
+		"Ability6"	"ability_shadow_dance"
+	}
+
+	"npc_dota_hero_earth_spirit"
+	{
+		"Ability1"	"ability_boulder_smash"
+		"Ability2"	"ability_rolling_boulder"
+		//"Ability3"	"ability_geomagnetic_grip"
+		"Ability4"	"ability_stone_caller"
+		"Ability6"	"ability_magnetize"
+	}
+
+	"npc_dota_hero_grimstroke"
+	{
+		"Ability1"	"ability_dark_artistry"
+		"Ability2"	"ability_ink_creature"
+		"Ability3"	"ability_spirit_walk"
+		"Ability6"	"ability_soul_chain"
+	}
+
 	"npc_dota_hero_terrorblade"
 	{
 		"Ability1"	"ability_reflection"

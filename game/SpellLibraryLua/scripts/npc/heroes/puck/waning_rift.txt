@@ -1,0 +1,41 @@
+""
+{
+	"ability_waning_rift"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/puck/waning_rift"
+		"AbilityTextureName"			"puck_waning_rift"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCooldown"				"16 15 14 13"
+		"AbilityManaCost"				"100 110 120 130"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"400 400 400 400"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"silence_duration"			"0.75 1.5 2.25 3.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"100 160 220 280"
+			}
+		}
+	}
+}

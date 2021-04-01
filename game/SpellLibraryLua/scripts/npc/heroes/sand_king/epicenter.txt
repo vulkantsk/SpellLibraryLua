@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+	"ability_epicenter"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sand_king/epicenter"
+		"AbilityTextureName"			"sandking_epicenter"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"				"0"
+		"AbilityChannelTime"			"2.0"
+		"AbilityDuration"				"3.0"
+		"AbilityCooldown"				"120 110 100"
+		"AbilityManaCost"				"150 225 300"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_radius"	"500 525 550 575 600 625 650 675 700 725 750 775 800 825"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_pulses"	"6 8 10"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_damage"	"110 120 130"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_slow"	"-30 -30 -30"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"epicenter_slow_as"		"-30"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_slow_duration_tooltip"	"3"
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+""
+{
+	"ability_phase_shift"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/puck/phase_shift"
+		"AbilityTextureName"			"puck_phase_shift"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+
+		"AbilityCastPoint"				"0"
+		"AbilityChannelTime"			"0.75 1.50 2.25 3.25"
+		"AbilityCooldown"				"6"
+		"AbilityManaCost"				"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"0.75 1.50 2.25 3.25"
+			}
+		}
+	}
+}

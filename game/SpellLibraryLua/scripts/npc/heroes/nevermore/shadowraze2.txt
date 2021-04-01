@@ -1,0 +1,58 @@
+""
+{
+	"ability_shadowraze2"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/nevermore/shadowraze"
+		"AbilityTextureName"			"nevermore_shadowraze2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"LinkedAbility"					"ability_shadowraze3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"450"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"90"
+		"AbilityCastAnimation"			"ACT_DOTA_RAZE_2"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastPoint"				"0.55"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"shadowraze_damage"	"90 160 230 300"	
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"shadowraze_radius"	"250"		
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"shadowraze_range"	"450"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"shadowraze_cooldown"	"3"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"stack_bonus_damage" "80"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"	"8"
+			}
+		}
+	}
+}

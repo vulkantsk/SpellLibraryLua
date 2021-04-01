@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+	"ability_scream_of_pain"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/queenofpain/scream_of_pain"
+		"AbilityTextureName"			"queenofpain_scream_of_pain"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.0"
+
+		"AbilityCooldown"				"7.0"
+		"AbilityManaCost"				"110 120 130 140"
+
+		"AbilityDamage"					"75 150 225 300"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"area_of_effect"		"475"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"900"
+			}
+		}
+	}
+}

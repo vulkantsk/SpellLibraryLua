@@ -1,0 +1,74 @@
+"DOTAAbilities"
+{
+	"ability_boulder_smash"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/earth_spirit/boulder_smash"
+		"AbilityTextureName"			"earth_spirit_boulder_smash"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.01"
+		"AbilityCooldown"				"22.0 18.0 14.0 10.0"
+		"AbilityManaCost"				"100"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"180"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rock_search_aoe"				"200"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rock_damage"			"50 100 150 200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"1.25 2.5 3.25 4"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"900"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"unit_distance"			"500.0 600.0 700.0 800.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"rock_distance"			"2000.0"
+			}			
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"remnant_smash_radius_tooltip"			"200"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_slow"				"60"
+			}
+		}
+	}
+}

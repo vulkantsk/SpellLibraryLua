@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+	"ability_song_of_the_siren"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/naga_siren/song_of_the_siren"
+		"AbilityTextureName"			"naga_siren_song_of_the_siren"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"HasScepterUpgrade"			"1"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"				"1.0"
+		"AbilityCastRange"				"1000 1200 1400"
+		"AbilityCooldown"				"160.0 120.0 80.0"
+		"AbilityManaCost"				"150 175 200"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"1000 1200 1400"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"7.0 7.0 7.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"animation_rate"				"0.55 0.55 0.55"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"regen_rate"				"10.0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"regen_rate_self"				"10.0"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"regen_rate_tooltip_scepter"				"10"
+				"RequiresScepter"	"1"
+			}
+		}
+	}
+}

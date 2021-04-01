@@ -1,0 +1,34 @@
+"DOTAAbilities"
+{
+	"ability_moon_glaive"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/luna/moon_glaive"
+		"AbilityTextureName"			"luna_moon_glaive"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range"						"500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bounces"					"1 2 3 6"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_reduction_percent"	"35"
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+"DOTAAbilities"
+{
+	"ability_global_silence"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/silencer/global_silence"
+		"AbilityTextureName"			"silencer_global_silence"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastPoint"				"0.3 0.3 0.3"
+		"AbilityDuration"				"4.5 5.25 6.0"
+		"AbilityCooldown"				"130.0"
+		"AbilityManaCost"				"300 450 600"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_duration"		"4.5 5.25 6.0"
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+	"ability_last_word"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/silencer/last_word"
+		"AbilityTextureName"			"silencer_last_word"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"900"
+		"AbilityCooldown"				"22 18 14 10"
+		"AbilityManaCost"				"115"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"75 150 225 300"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"debuff_duration"	"4"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"	"3 4 5 6"
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+""
+{
+	"ability_spirit_walk"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/grimstroke/spirit_walk"
+		"AbilityTextureName"			"grimstroke_spirit_walk"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"32 28 24 20"
+		"AbilityManaCost"				"110 120 130 140"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"spawn_time"				"0.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"speed"						"750"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"latch_duration"			"4.0 4.5 5.0 5.5"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"destroy_attacks"			"6 6 9 9"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_per_tick"			"6 9 12 15"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dps_tooltip"				"12 18 24 30"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"enemy_vision_time"			"4"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tick_interval"				"0.5"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"infection_search_radius"	"1000"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"destroy_attacks_tooltip"	"2 2 3 3"
+			}
+			"11"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"pop_damage"				"120 200 280 360"
+			}
+			"12"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"return_projectile_speed"	"750"
+			}
+			"13"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"return_mana_gain"			"50 75 100 125"
+			}
+			"14"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"latched_unit_offset"		"130"
+			}
+			"15"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"latched_unit_offset_short"	"95"
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+""
+{
+	"ability_dream_coil"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/puck/dream_coil"
+		"AbilityTextureName"			"puck_dream_coil"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"HasScepterUpgrade"				"1"
+		
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"750"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCooldown"				"70 65 60"
+		"AbilityManaCost"				"100 150 200"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"coil_duration"				"6.0 6.0 6.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"coil_break_radius"			"600 600 600"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"0.5"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"coil_stun_duration"		"1.5 2.25 3.0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"coil_break_damage"			"300 400 500"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"coil_radius"				"375 375 375"
+			}			
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"coil_duration_scepter"		"8"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"coil_break_damage_scepter"	"400 550 700"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"coil_stun_duration_scepter"		"1.5 3 4.5"
+			}
+		}
+	}
+}

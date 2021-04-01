@@ -1,0 +1,70 @@
+"DOTAAbilities"
+{
+	"ability_rolling_boulder"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/earth_spirit/rolling_boulder"
+		"AbilityTextureName"			"earth_spirit_rolling_boulder"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"3000"
+		"AbilityCastPoint"				"0.01"
+		"AbilityCooldown"				"16.0 12.0 8.0 4.0"
+		"AbilityManaCost"				"50"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"150"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"800"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rock_speed"			"1600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"distance"				"800.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"rock_distance"			"1600.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"delay"					"0.6"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"70 80 90 100"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stun_duration"			"0.4 0.6 0.8 1.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"rock_bonus_duration"	"0.4 0.6 0.8 1.0"
+			}
+		}
+	}
+}

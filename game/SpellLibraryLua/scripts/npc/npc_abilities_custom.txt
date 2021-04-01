@@ -1,3 +1,78 @@
+#base "heroes/silencer/curse_of_the_silent.txt"
+#base "heroes/silencer/glaives_of_wisdom.txt"
+#base "heroes/silencer/last_word.txt"
+#base "heroes/silencer/global_silence.txt"
+
+#base "heroes/obsidian_destroyer/arcane_orb.txt"
+#base "heroes/obsidian_destroyer/astral_imprisonment.txt"
+#base "heroes/obsidian_destroyer/equilibrium.txt"
+#base "heroes/obsidian_destroyer/sanity_eclipse.txt"
+
+#base "heroes/nevermore/shadowraze1.txt"
+#base "heroes/nevermore/shadowraze2.txt"
+#base "heroes/nevermore/shadowraze3.txt"
+#base "heroes/nevermore/necromastery.txt"
+#base "heroes/nevermore/dark_lord.txt"
+#base "heroes/nevermore/requiem.txt"
+
+#base "heroes/sand_king/burrowstrike.txt"
+#base "heroes/sand_king/sand_storm.txt"
+#base "heroes/sand_king/caustic_finale.txt"
+#base "heroes/sand_king/epicenter.txt"
+
+#base "heroes/queenofpain/shadow_strike.txt"
+#base "heroes/queenofpain/blink.txt"
+#base "heroes/queenofpain/scream_of_pain.txt"
+#base "heroes/queenofpain/sonic_wave.txt"
+
+#base "heroes/ogre_magi/fireblast.txt"
+#base "heroes/ogre_magi/ignite.txt"
+#base "heroes/ogre_magi/bloodlust.txt"
+#base "heroes/ogre_magi/unrefined_fireblast.txt"
+#base "heroes/ogre_magi/multicast.txt"
+
+#base "heroes/naga_siren/mirror_image.txt"
+#base "heroes/naga_siren/ensnare.txt"
+#base "heroes/naga_siren/rip_tide.txt"
+#base "heroes/naga_siren/song_of_the_siren.txt"
+#base "heroes/naga_siren/song_of_the_siren_cancel.txt"
+
+#base "heroes/magnataur/shockwave.txt"
+#base "heroes/magnataur/empower.txt"
+#base "heroes/magnataur/skewer.txt"
+#base "heroes/magnataur/reverse_polarity.txt"
+
+#base "heroes/puck/illusory_orb.txt"
+#base "heroes/puck/waning_rift.txt"
+#base "heroes/puck/phase_shift.txt"
+#base "heroes/puck/dream_coil.txt"
+
+#base "heroes/luna/lucent_beam.txt"
+#base "heroes/luna/moon_glaive.txt"
+#base "heroes/luna/lunar_blessing.txt"
+#base "heroes/luna/eclipse.txt"
+
+#base "heroes/jakiro/dual_breath.txt"
+#base "heroes/jakiro/ice_path.txt"
+#base "heroes/jakiro/liquid_fire.txt"
+#base "heroes/jakiro/macropyre.txt"
+
+#base "heroes/slark/dark_pact.txt"
+#base "heroes/slark/pounce.txt"
+#base "heroes/slark/essence_shift.txt"
+#base "heroes/slark/shadow_dance.txt"
+
+#base "heroes/earth_spirit/boulder_smash.txt"
+#base "heroes/earth_spirit/rolling_boulder.txt"
+//#base "heroes/earth_spirit/geomagnetic_grip.txt"
+#base "heroes/earth_spirit/stone_caller.txt"
+#base "heroes/earth_spirit/magnetize.txt"
+
+#base "heroes/grimstroke/dark_artistry.txt"
+#base "heroes/grimstroke/ink_creature.txt"
+#base "heroes/grimstroke/spirit_walk.txt"
+#base "heroes/grimstroke/soul_chain.txt"
+
 #base "heroes/terrorblade/reflection.txt"
 #base "heroes/terrorblade/conjure_image.txt"
 #base "heroes/terrorblade/metamorphosis.txt"

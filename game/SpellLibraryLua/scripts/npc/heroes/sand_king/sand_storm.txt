@@ -1,0 +1,47 @@
+"DOTAAbilities"
+{
+	"ability_sand_storm"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sand_king/sand_storm"
+		"AbilityTextureName"			"sandking_sand_storm"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityDuration"				"20 25 30 35"
+		"AbilityCooldown"				"40 34 28 22"
+		"AbilityCastPoint"				"0"
+		"AbilityManaCost"				"75"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_tick_rate"	"0.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_radius"		"425 500 575 650"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_damage"		"20 45 70 95"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_delay"			"0.7"
+			}
+		}
+	}
+}

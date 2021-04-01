@@ -1,0 +1,64 @@
+"DOTAAbilities"
+{
+	"ability_burrowstrike"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sand_king/burrowstrike"
+		"AbilityTextureName"			"sandking_burrowstrike"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"				"350 450 550 650"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"14 13 12 11"
+		"AbilityManaCost"				"110 120 130 140"
+		"AbilityDamage"					"85 150 215 280"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_width"		"150"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burrow_duration"	"1.9 2.0 2.1 2.2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_speed"		"2000"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burrow_anim_time"	"0.52"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"tooltip_range"		"350 450 550 650"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cast_range_scepter"		"700 900 1100 1300"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_speed_scepter"		"3000"
+			}
+		}
+	}
+}

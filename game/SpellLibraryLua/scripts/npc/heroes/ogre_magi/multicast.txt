@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"ability_multicast"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ogre_magi/multicast"
+		"AbilityTextureName"			"ogre_magi_multicast"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multicast_2_times"		"0.75 0.75 0.75"
+			}
+
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multicast_3_times"		"0 0.3 0.3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multicast_4_times"		"0 0 0.15"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bloodlust_aoe"			"575"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multicast_2_times_tooltip"		"75"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multicast_3_times_tooltip"		"0 30 30"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multicast_4_times_tooltip"		"0 0 15"
+			}
+		}
+	}
+}

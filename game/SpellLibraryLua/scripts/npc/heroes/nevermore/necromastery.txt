@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+	"ability_necromastery"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/nevermore/necromastery"
+		"AbilityTextureName"			"nevermore_necromastery"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HasScepterUpgrade"				"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"necromastery_damage_per_soul"	"1 2 3 4"
+				"CalculateSpellDamageTooltip"	"0"
+				"LinkedSpecialBonus"			"special_bonus_unique_nevermore_1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"necromastery_max_souls"	"11 14 17 20"
+				"LinkedSpecialBonus"			"special_bonus_unique_nevermore_4"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"soul_release"			"0.5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"necromastery_max_souls_scepter" "25"
+				"RequiresScepter"			"1"
+			}
+		}
+	}
+}

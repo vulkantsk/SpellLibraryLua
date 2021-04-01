@@ -1,0 +1,34 @@
+"DOTAAbilities"
+{
+	"ability_qop_blink"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/queenofpain/blink"
+		"AbilityTextureName"			"queenofpain_blink"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.33"
+		"AbilityCooldown"				"15 12 9 6"
+		"AbilityManaCost"				"60"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range"			"1300"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"min_blink_range"		"200"
+			}
+		}
+	}
+}
